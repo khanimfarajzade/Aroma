@@ -1,0 +1,15 @@
+main {
+  position: relative;
+  top: 20vh;
+ 
+  #mainHeroSection {
+   // height: 100vh;
+    // background-color: red
+   // opacity: 0.8;
+    background-image: linear-gradient(to right , blue 35%, blue 25%, #eceff0 25%,#eceff0 25%);
+    .mainHeroImg{
+        width: 40%;
+    }
+  }
+ 
+}

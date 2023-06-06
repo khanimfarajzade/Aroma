@@ -2,57 +2,109 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  background-color: #ffffff;
   .container {
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    ul {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      select {
-        border: none;
-        font-size: 16px;
-      }
-    }
-    .buttonMenu {
+    .detskopMenu {
+      font-size: 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      .navBtn {
-        background-color: #ffffff;
-        color: #000000;
-        font-weight: bold;
-        border: 2px solid #c4c1c1;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        select {
+          border: none;
+          font-size: 16px;
+        }
       }
-      .navBtn:hover {
-        background-color: transparent;
-        transition: 600ms;
-        border: 2px solid #3e4fea;
-        color: #000000;
-        font-weight: bold;
+      .buttonMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        .navBtn {
+          background-color: #ffffff;
+          color: #000000;
+          font-weight: bold;
+          border: 2px solid #c4c1c1;
+        }
+        .navBtn:hover {
+          background-color: transparent;
+          transition: 600ms;
+          border: 2px solid #3e4fea;
+          color: #000000;
+          font-weight: bold;
+        }
       }
     }
+
     .mobilMenu {
       display: none;
     }
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .navbar {
     .container {
-        ul{
-            display: none;
-        }
+      .detskopMenu {
+        display: none;
+      }
+
       .mobilMenu {
-        display: block !important;
-        i{
-            color: #000 !important;
+        display: block;
+        .navBrandContainer {
+          display: flex;
+          justify-content: space-between;
+          i {
+            font-size: 24px;
+            color: #3e4fea;
+          }
+        }
+        .mobilList {
+          // display: none;
+          height: 0px;
+          overflow: hidden;
+          transition: 500ms;
+          ul {
+            display: flex;
+            flex-direction: column;
+
+            select {
+              border: none;
+              font-size: 16px;
+            }
+          }
+          .buttonMenu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .navBtn {
+              background-color: #ffffff;
+              color: #000000;
+              font-weight: bold;
+              border: 2px solid #c4c1c1;
+            }
+            .navBtn:hover {
+              background-color: transparent;
+              transition: 600ms;
+              border: 2px solid #3e4fea;
+              color: #000000;
+              font-weight: bold;
+            }
+          }
+        }
+        .list {
+           //transition: 500ms;
+          // display: block;
+          //height: auto;
+          height: 150px;
         }
       }
     }

@@ -9,41 +9,97 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
     <title>Aroma</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <img src="./assets/imgs/logo.png.webp" alt="logo" />
-        
-        <ul class="detskopMenu">
-          <li>Home</li>
-          <select name="shop" id="shop">
-            <option value="shop" disabled selected>Shop</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-          <li>Blog</li>
-          <select name="pages" id="pages">
-            <option value="pages" disabled selected>Pages</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-          </select>
-          <li>Contact</li>
-        </ul>
-        <div class="buttonMenu">
-          <div class="iconBox">
-            <i class="fa fa-solid fa-search"></i>
-            <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
+        <div class="detskopMenu">
+          <img src="./assets/imgs/logo.png.webp" alt="logo" />
+
+          <ul>
+            <li>Home</li>
+            <select name="shop" id="shop">
+              <option value="shop" disabled selected>Shop</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <li>Blog</li>
+            <select name="pages" id="pages">
+              <option value="pages" disabled selected>Pages</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <li>Contact</li>
+          </ul>
+          <div class="buttonMenu">
+            <div class="iconBox">
+              <i class="fa fa-solid fa-search"></i>
+              <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
+            </div>
+            <button type="button" class="btn navBtn">Buy Now</button>
           </div>
-          <button type="button" class="btn navBtn">Buy Now</button>
         </div>
+
         <div class="mobilMenu">
-            <i class="fa-solid fa-bars"></i>
+          <div class="navBrandContainer">
+            <img src="./assets/imgs/logo.png.webp" alt="logo" />
+            <i class="fa-solid fa-bars burgerBtn"></i>
+          </div>
+          <div class="mobilList">
+            <ul>
+              <li>Home</li>
+              <select name="shop" id="shop">
+                <option value="shop" disabled selected>Shop</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <li>Blog</li>
+              <select name="pages" id="pages">
+                <option value="pages" disabled selected>Pages</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <li>Contact</li>
+            </ul>
+            <div class="buttonMenu">
+              <div class="iconBox">
+                <i class="fa fa-solid fa-search"></i>
+                <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
+              </div>
+              <button type="button" class="btn navBtn">Buy Now</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+    <!-- nav end -->
+
+    <!-- main start -->
+    <main>
+      <section id="mainHeroSection">
+       <div class="container">
+        <div class="mainHeroImg">
+          <img src="./assets/imgs/hero-banner.png.webp" alt="">
+        </div>
+        <div class="mainHeroContent">
+          <h4></h4>
+          <h2></h2>
+          <p></p>
+          <button type="button" class="btn">Browse Now</button>
+        </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <!-- js link -->
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>
