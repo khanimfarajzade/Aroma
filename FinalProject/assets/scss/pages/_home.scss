@@ -1,15 +1,136 @@
 main {
   position: relative;
-  top: 20vh;
- 
+  top: 80px;
+
   #mainHeroSection {
-   // height: 100vh;
+    //  height: 100vh;
     // background-color: red
-   // opacity: 0.8;
-    background-image: linear-gradient(to right , blue 35%, blue 25%, #eceff0 25%,#eceff0 25%);
-    .mainHeroImg{
+    // opacity: 0.8;
+
+    background-image: linear-gradient(
+      to right,
+      #384AEB 35%,
+      #384AEB 25%,
+      #eceff0 25%,
+      #eceff0 25%
+    );
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .mainHeroImg {
         width: 40%;
+        height: 100%;
+      }
+      .mainHeroContent{
+        
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h4{
+          color: #555555 ;
+          font-size: 30px;
+        }
+        h2{
+          color: #222222;
+          font-size: 50px;
+          font-weight: bold;
+        }
+        p{
+          font-size: 15px;
+          color: #777777;
+         
+        }
+      }
     }
   }
- 
+}
+
+
+
+@media screen and (max-width:768px) {
+  main {
+   
+    #mainHeroSection {
+     
+      .container {
+       
+        .mainHeroContent{
+          gap: 10px;
+          h4{
+         
+            font-size: 29px;
+          }
+          h2{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width:542px) {
+  main {
+    position: relative;
+   
+  
+    #mainHeroSection {
+      //  height: 100vh;
+      // background-color: red
+      // opacity: 0.8;
+  
+      background-image: linear-gradient(
+        to right,
+        #384AEB 10%,
+        #384AEB 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+        #384AEB 10%,
+        #384AEB 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+      );
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mainHeroImg {
+          display: none;
+        }
+        .mainHeroContent{
+          padding: 0 0 0 20px ;
+          width: 85%;
+         margin: auto;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 20px;
+          h4{
+           
+            color: #555555 ;
+            font-size: 30px;
+          }
+          h2{
+           
+            color: #222222;
+            font-size: 25px;
+            font-weight: bold;
+          }
+          p{
+           
+            font-size: 15px;
+            color: #777777;
+           
+          }
+        }
+      }
+    }
+  }
+  
+  
 }

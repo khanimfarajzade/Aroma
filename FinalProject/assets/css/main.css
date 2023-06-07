@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -20,14 +21,15 @@ img {
 }
 
 * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .container {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .btn {
@@ -35,15 +37,15 @@ img {
   height: 48px;
   width: 154px;
   border-radius: 30px;
-  background-color: #3e4fea;
-  border: 2px solid #3e4fea;
+  background-color: #384AEB;
+  border: 2px solid #384AEB;
   color: #ffffff;
 }
 
 .btn:hover {
   background-color: transparent;
   transition: 600ms;
-  border: 2px solid #3e4fea;
+  border: 2px solid #384AEB;
   color: #000000;
   font-weight: bold;
 }
@@ -55,7 +57,7 @@ img {
   border-bottom: 2px solid gray;
   display: flex;
   align-items: center;
-  height: 20vh;
+  height: 80px;
   background-color: #ffffff;
 }
 .navbar .container .detskopMenu {
@@ -148,11 +150,86 @@ img {
 }
 main {
   position: relative;
-  top: 20vh;
+  top: 80px;
 }
 main #mainHeroSection {
-  background-image: linear-gradient(to right, blue 35%, blue 25%, #eceff0 25%, #eceff0 25%);
+  background-image: linear-gradient(to right, #384AEB 35%, #384AEB 25%, #eceff0 25%, #eceff0 25%);
 }
-main #mainHeroSection .mainHeroImg {
+main #mainHeroSection .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #mainHeroSection .container .mainHeroImg {
   width: 40%;
+  height: 100%;
+}
+main #mainHeroSection .container .mainHeroContent {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #mainHeroSection .container .mainHeroContent h4 {
+  color: #555555;
+  font-size: 30px;
+}
+main #mainHeroSection .container .mainHeroContent h2 {
+  color: #222222;
+  font-size: 50px;
+  font-weight: bold;
+}
+main #mainHeroSection .container .mainHeroContent p {
+  font-size: 15px;
+  color: #777777;
+}
+
+@media screen and (max-width: 768px) {
+  main #mainHeroSection .container .mainHeroContent {
+    gap: 10px;
+  }
+  main #mainHeroSection .container .mainHeroContent h4 {
+    font-size: 29px;
+  }
+  main #mainHeroSection .container .mainHeroContent h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 542px) {
+  main {
+    position: relative;
+  }
+  main #mainHeroSection {
+    background-image: linear-gradient(to right, #384AEB 10%, #384AEB 10%, #eceff0 10%, #eceff0 10%, #384AEB 10%, #384AEB 10%, #eceff0 10%, #eceff0 10%, #eceff0 10%, #eceff0 10%);
+  }
+  main #mainHeroSection .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main #mainHeroSection .container .mainHeroImg {
+    display: none;
+  }
+  main #mainHeroSection .container .mainHeroContent {
+    padding: 0 0 0 20px;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main #mainHeroSection .container .mainHeroContent h4 {
+    color: #555555;
+    font-size: 30px;
+  }
+  main #mainHeroSection .container .mainHeroContent h2 {
+    color: #222222;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  main #mainHeroSection .container .mainHeroContent p {
+    font-size: 15px;
+    color: #777777;
+  }
 }
