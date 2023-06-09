@@ -103,6 +103,7 @@ img {
     display: none;
   }
   .navbar .container .mobilMenu {
+    height: 20px;
     display: block;
   }
   .navbar .container .mobilMenu .navBrandContainer {
@@ -146,14 +147,14 @@ img {
   }
   .navbar .container .mobilMenu .list {
     height: 150px;
+    background-color: #ffffff;
   }
 }
 main {
-  position: relative;
-  top: 80px;
+  padding-top: 80px;
 }
 main #mainHeroSection {
-  background-image: linear-gradient(to right, #384AEB 35%, #384AEB 25%, #eceff0 25%, #eceff0 25%);
+  background-image: linear-gradient(to right, #384aeb 35%, #384aeb 25%, #eceff0 25%, #eceff0 25%);
 }
 main #mainHeroSection .container {
   display: flex;
@@ -183,7 +184,6 @@ main #mainHeroSection .container .mainHeroContent p {
   font-size: 15px;
   color: #777777;
 }
-
 @media screen and (max-width: 768px) {
   main #mainHeroSection .container .mainHeroContent {
     gap: 10px;
@@ -196,11 +196,8 @@ main #mainHeroSection .container .mainHeroContent p {
   }
 }
 @media screen and (max-width: 542px) {
-  main {
-    position: relative;
-  }
   main #mainHeroSection {
-    background-image: linear-gradient(to right, #384AEB 10%, #384AEB 10%, #eceff0 10%, #eceff0 10%, #384AEB 10%, #384AEB 10%, #eceff0 10%, #eceff0 10%, #eceff0 10%, #eceff0 10%);
+    background-image: linear-gradient(to right, #384aeb 10%, #384aeb 10%, #eceff0 10%, #eceff0 10%, #384aeb 10%, #384aeb 10%, #eceff0 10%, #eceff0 10%, #eceff0 10%, #eceff0 10%);
   }
   main #mainHeroSection .container {
     display: flex;
@@ -232,4 +229,42 @@ main #mainHeroSection .container .mainHeroContent p {
     font-size: 15px;
     color: #777777;
   }
+}
+main #percentSection {
+  padding: 100px 0;
+  background-image: url("../imgs/parallax-bg.png.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #percentSection h2 {
+  margin: 0 0 25px;
+  font-size: 50px;
+  font-weight: bold;
+}
+main #percentSection h4 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #222222;
+  font-weight: bold;
+}
+main #percentSection p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: #777777;
+}
+@media screen and (max-width: 768px) {
+  main #percentSection {
+    text-align: center;
+  }
+  main #percentSection h2 {
+    font-size: 35px;
+  }
+}
+
+footer {
+  color: aliceblue;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

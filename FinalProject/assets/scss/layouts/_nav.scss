@@ -52,14 +52,17 @@
 
 @media screen and (max-width: 768px) {
   .navbar {
+    
     .container {
       .detskopMenu {
         display: none;
       }
 
       .mobilMenu {
+        height: 20px;
         display: block;
         .navBrandContainer {
+          
           display: flex;
           justify-content: space-between;
           i {
@@ -105,6 +108,7 @@
           // display: block;
           //height: auto;
           height: 150px;
+          background-color: #ffffff;
         }
       }
     }

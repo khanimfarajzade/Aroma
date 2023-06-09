@@ -1,7 +1,9 @@
 main {
-  position: relative;
-  top: 80px;
 
+  padding-top: 80px;
+
+
+  // mainHeroSection start
   #mainHeroSection {
     //  height: 100vh;
     // background-color: red
@@ -9,8 +11,8 @@ main {
 
     background-image: linear-gradient(
       to right,
-      #384AEB 35%,
-      #384AEB 25%,
+      #384aeb 35%,
+      #384aeb 25%,
       #eceff0 25%,
       #eceff0 25%
     );
@@ -22,115 +24,142 @@ main {
         width: 40%;
         height: 100%;
       }
-      .mainHeroContent{
-        
+      .mainHeroContent {
         width: 55%;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        h4{
-          color: #555555 ;
+        h4 {
+          color: #555555;
           font-size: 30px;
         }
-        h2{
+        h2 {
           color: #222222;
           font-size: 50px;
           font-weight: bold;
         }
-        p{
+        p {
           font-size: 15px;
           color: #777777;
-         
         }
       }
     }
   }
-}
 
-
-
-@media screen and (max-width:768px) {
-  main {
+  // mainHeroSection responsivlik start
+  @media screen and (max-width: 768px) {
    
-    #mainHeroSection {
-     
-      .container {
-       
-        .mainHeroContent{
-          gap: 10px;
-          h4{
-         
-            font-size: 29px;
-          }
-          h2{
-            font-size: 30px;
+      #mainHeroSection {
+        .container {
+          .mainHeroContent {
+            gap: 10px;
+            h4 {
+              font-size: 29px;
+            }
+            h2 {
+              font-size: 30px;
+            }
           }
         }
-      }
+      
     }
   }
-  
-}
 
-@media screen and (max-width:542px) {
-  main {
-    position: relative;
-   
-  
-    #mainHeroSection {
-      //  height: 100vh;
-      // background-color: red
-      // opacity: 0.8;
-  
-      background-image: linear-gradient(
-        to right,
-        #384AEB 10%,
-        #384AEB 10%,
-        #eceff0 10%,
-        #eceff0 10%,
-        #384AEB 10%,
-        #384AEB 10%,
-        #eceff0 10%,
-        #eceff0 10%,
-        #eceff0 10%,
-        #eceff0 10%,
-      );
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .mainHeroImg {
-          display: none;
-        }
-        .mainHeroContent{
-          padding: 0 0 0 20px ;
-          width: 85%;
-         margin: auto;
+  @media screen and (max-width: 542px) {
+    
+
+      #mainHeroSection {
+        //  height: 100vh;
+        // background-color: red
+        // opacity: 0.8;
+
+        background-image: linear-gradient(
+          to right,
+          #384aeb 10%,
+          #384aeb 10%,
+          #eceff0 10%,
+          #eceff0 10%,
+          #384aeb 10%,
+          #384aeb 10%,
+          #eceff0 10%,
+          #eceff0 10%,
+          #eceff0 10%,
+          #eceff0 10%
+        );
+        .container {
           display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 20px;
-          h4{
-           
-            color: #555555 ;
-            font-size: 30px;
+          align-items: center;
+          justify-content: space-between;
+          .mainHeroImg {
+            display: none;
           }
-          h2{
-           
-            color: #222222;
-            font-size: 25px;
-            font-weight: bold;
-          }
-          p{
-           
-            font-size: 15px;
-            color: #777777;
-           
+          .mainHeroContent {
+            padding: 0 0 0 20px;
+            width: 85%;
+            margin: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 20px;
+            h4 {
+              color: #555555;
+              font-size: 30px;
+            }
+            h2 {
+              color: #222222;
+              font-size: 25px;
+              font-weight: bold;
+            }
+            p {
+              font-size: 15px;
+              color: #777777;
+            }
           }
         }
       }
+    
+  }
+
+  // mainHeroSection end
+
+  // percentSection start
+  #percentSection {
+    padding: 100px 0;
+
+    
+    background-image: url("../imgs/parallax-bg.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h2 {
+      margin: 0 0 25px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    h4 {
+      // owslad srift
+      margin: 0 0 8px;
+      font-size: 30px;
+      color: #222222;
+      font-weight: bold;
+    }
+    p {
+      margin: 0 0 16px;
+      font-size: 15px;
+      color: #777777;
     }
   }
-  
-  
+
+  @media screen and (max-width: 768px) {
+    #percentSection {
+      text-align: center;
+      h2 {
+        font-size: 35px; 
+      }
+    }
+  }
+   // percentSection end
+
+
+
 }
