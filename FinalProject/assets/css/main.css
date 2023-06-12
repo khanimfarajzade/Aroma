@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +15,8 @@ a {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
@@ -154,7 +155,7 @@ main {
   padding-top: 80px;
 }
 main #mainHeroSection {
-  background-image: linear-gradient(to right, #384aeb 35%, #384aeb 25%, #eceff0 25%, #eceff0 25%);
+  background-image: linear-gradient(to right, #384aeb 35%, #384aeb 25%, #F1F6F7 25%, #F1F6F7 25%);
 }
 main #mainHeroSection .container {
   display: flex;
@@ -230,6 +231,59 @@ main #mainHeroSection .container .mainHeroContent p {
     color: #777777;
   }
 }
+main #mainCarusel {
+  padding: 10px 0;
+}
+main #mainCarusel .mainCaruselContainer {
+  display: flex;
+  gap: 10px;
+}
+main #mainCarusel .mainCaruselContainer .card {
+  position: relative;
+}
+main #mainCarusel .mainCaruselContainer .card .hoverProductName {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 500ms;
+}
+main #mainCarusel .mainCaruselContainer .card .hoverProductName div {
+  padding: 10px 0;
+  margin-top: 50%;
+  color: #FFFFFF;
+  width: 60%;
+  background-color: #384AEB;
+}
+main #mainCarusel .mainCaruselContainer .card .hoverProductName div p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin: 5px 0 10px 20px;
+}
+main #mainCarusel .mainCaruselContainer .card .hoverProductName div span {
+  margin-left: 20px;
+  font-size: 13px;
+}
+main #mainCarusel .mainCaruselContainer .card:hover .hoverProductName {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 855px) {
+  main #mainCarusel .mainCaruselContainer #three {
+    display: none;
+  }
+}
+@media screen and (max-width: 542px) {
+  main #mainCarusel .mainCaruselContainer #three {
+    display: none;
+  }
+  main #mainCarusel .mainCaruselContainer #two {
+    display: none;
+  }
+}
 main #percentSection {
   padding: 100px 0;
   background-image: url("../imgs/parallax-bg.png.webp");
@@ -243,6 +297,7 @@ main #percentSection h2 {
   font-weight: bold;
 }
 main #percentSection h4 {
+  font-family: "Oswald", sans-serif;
   margin: 0 0 8px;
   font-size: 30px;
   color: #222222;
@@ -264,7 +319,6 @@ main #percentSection p {
 
 footer {
   color: aliceblue;
-  background: #000428; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #004e92, #000428); /* Chrome 10-25, Safari 5.1-6 */
+  background: #000428; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

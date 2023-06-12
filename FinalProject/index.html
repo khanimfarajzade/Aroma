@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
-    <title>Aroma</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="detskopMenu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ 
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
+  <title>Aroma</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="detskopMenu">
+        <img src="./assets/imgs/logo.png.webp" alt="logo" />
+
+        <ul>
+          <li>Home</li>
+          <select name="shop" id="shop">
+            <option value="shop" disabled selected>Shop</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <li>Blog</li>
+          <select name="pages" id="pages">
+            <option value="pages" disabled selected>Pages</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <li>Contact</li>
+        </ul>
+        <div class="buttonMenu">
+          <div class="iconBox">
+            <i class="fa fa-solid fa-search"></i>
+            <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
+          </div>
+          <button type="button" class="btn navBtn">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="mobilMenu">
+        <div class="navBrandContainer">
           <img src="./assets/imgs/logo.png.webp" alt="logo" />
-
+          <i class="fa-solid fa-bars burgerBtn"></i>
+        </div>
+        <div class="mobilList">
           <ul>
             <li>Home</li>
             <select name="shop" id="shop">
@@ -44,84 +77,107 @@
             <button type="button" class="btn navBtn">Buy Now</button>
           </div>
         </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
 
-        <div class="mobilMenu">
-          <div class="navBrandContainer">
-            <img src="./assets/imgs/logo.png.webp" alt="logo" />
-            <i class="fa-solid fa-bars burgerBtn"></i>
-          </div>
-          <div class="mobilList">
-            <ul>
-              <li>Home</li>
-              <select name="shop" id="shop">
-                <option value="shop" disabled selected>Shop</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <li>Blog</li>
-              <select name="pages" id="pages">
-                <option value="pages" disabled selected>Pages</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <li>Contact</li>
-            </ul>
-            <div class="buttonMenu">
-              <div class="iconBox">
-                <i class="fa fa-solid fa-search"></i>
-                <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
-              </div>
-              <button type="button" class="btn navBtn">Buy Now</button>
-            </div>
-          </div>
+  <!-- main start -->
+  <main>
+    <!-- mainHeroSection start -->
+    <section id="mainHeroSection">
+      <div class="container">
+        <div class="mainHeroImg">
+          <img src="./assets/imgs/hero-banner.png.webp" alt="" />
+        </div>
+        <div class="mainHeroContent">
+          <h4>Shop is fun</h4>
+          <h2>BROWSE OUR PREMIUM PRODUCT</h2>
+          <p>
+            Us which over of signs divide dominion deep fill bring they're
+            meat beho upon own earth without morning over third. Their male
+            dry. They are great appear whose land fly grass.
+          </p>
+          <button type="button" class="btn">Browse Now</button>
         </div>
       </div>
-    </nav>
-    <!-- nav end -->
+    </section>
+    <!-- mainHeroSection end-->
+    <!-- mainCarusel -->
+    <section id="mainCarusel">
+     
+        <div class="mainCaruselContainer">
+          <div class="card"><img src="./assets/imgs/hero-slide2.png.webp" alt="foto">
+          <div class="hoverProductName">
+            <div>
+             <p>Wireless Headphone</p> 
+             <span>Acsessories item</span>
+            </div>
 
-    <!-- main start -->
-    <main>
-      <!-- mainHeroSection start -->
-      <section id="mainHeroSection">
-        <div class="container">
-          <div class="mainHeroImg">
-            <img src="./assets/imgs/hero-banner.png.webp" alt="" />
           </div>
-          <div class="mainHeroContent">
-            <h4>Shop is fun</h4>
-            <h2>BROWSE OUR PREMIUM PRODUCT</h2>
-            <p>
-              Us which over of signs divide dominion deep fill bring they're
-              meat beho upon own earth without morning over third. Their male
-              dry. They are great appear whose land fly grass.
-            </p>
-            <button type="button" class="btn">Browse Now</button>
           </div>
+          <div class="card" id="two"><img src="./assets/imgs/hero-slide3.png.webp" alt="foto">
+            <div class="hoverProductName">
+              <div>
+               <p>Wireless Headphone</p> 
+               <span>Acsessories item</span>
+              </div>
+  
+            </div>
+          </div>
+          <div class="card" id="three"><img src="./assets/imgs/hero-slide1.png.webp" alt="foto">
+            <div class="hoverProductName">
+              <div>
+               <p>Wireless Headphone</p> 
+               <span>Acsessories item</span>
+              </div>
+  
+            </div>
+          </div>
+         
         </div>
-      </section>
-      <!-- mainHeroSection end-->
+     
+    </section>
+    <!-- mainCarusel -->
 
-      <section id="percentSection">
-        <div class="container">
-          <h2>Up To 50% Off</h2>
-          <h4>Winter Sale</h4>
-          <p>Him she'd let them sixth saw light</p>
-          <button type="button" class="btn">Shop Now</button>
-        </div>
-      </section>
-      <section>
-        new section
-      </section>
-    </main>
+    <!-- percentSection -->
+    <section id="percentSection">
+      <div class="container">
+        <h2>Up To 50% Off</h2>
+        <h4>Winter Sale</h4>
+        <p>Him she'd let them sixth saw light</p>
+        <button type="button" class="btn">Shop Now</button>
+      </div>
+    </section>
+    <!-- percentSection -->
 
-    <!-- footer  -->
-    <footer>
-      Copyright ©2023 All rights reserved | This template is made with by
-      Colorlib
-    </footer>
-    <!-- js link -->
-    <script src="./assets/js/nav.js"></script>
-  </body>
+   
+  </main>
+
+  <!-- footer  -->
+  <footer>
+    Copyright ©2023 All rights reserved | This template is made with by
+    Colorlib
+  </footer>
+ 
+
+  <!-- cdn silck -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+ <!-- slick link -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <!-- js link -->
+  <script src="./assets/js/nav.js"></script>
+  <script src="./assets/js/carusel.js"></script>
+
+  <!-- myscript -->
+  <script>
+    $('.mainCruselContainer').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+  </script>
+</body>
+
 </html>
