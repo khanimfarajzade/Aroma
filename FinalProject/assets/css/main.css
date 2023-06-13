@@ -284,6 +284,75 @@ main #mainCarusel .mainCaruselContainer .card:hover .hoverProductName {
     display: none;
   }
 }
+main #trendingProduct {
+  padding: 10px 0;
+}
+main #trendingProduct .container .trendingProductHeading {
+  padding: 20px 0px;
+}
+main #trendingProduct .container .trendingProductHeading h2 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Oswald", "sanf-serif";
+}
+main #trendingProduct .container .trendingProductHeading p {
+  font-size: 14px;
+}
+main #trendingProduct .container .trendingProductHeading hr {
+  border: 2px solid #384AEB;
+  width: 80px;
+}
+main #trendingProduct .container .trendingProductContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend {
+  position: relative;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 500ms;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName div {
+  padding: 10px 0;
+  margin-top: 50%;
+  color: #FFFFFF;
+  width: 60%;
+  background-color: #384AEB;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName div p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin: 5px 0 10px 20px;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName div span {
+  margin-left: 20px;
+  font-size: 13px;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend:hover .hoverProductName {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 855px) {
+  main #trendingProduct .container .trendingProductContainer #three {
+    display: none;
+  }
+}
+@media screen and (max-width: 542px) {
+  main #trendingProduct .container .trendingProductContainer #three {
+    display: none;
+  }
+  main #trendingProduct .container .trendingProductContainer #two {
+    display: none;
+  }
+}
 main #percentSection {
   padding: 100px 0;
   background-image: url("../imgs/parallax-bg.png.webp");
