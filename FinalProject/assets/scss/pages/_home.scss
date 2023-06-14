@@ -240,11 +240,13 @@ main {
 
   // trendingProduct
   #trendingProduct {
+    background-color: #FDFDFD;
     padding: 10px 0;
 
     .container {
       .trendingProductHeading {
         padding: 20px 0px;
+        width: 250px;
 
         h2 {
           font-size: 36px;
@@ -254,11 +256,14 @@ main {
 
         p {
           font-size: 14px;
+          color: #7B7B7B;
         }
 
         hr {
-          border: 2px solid #384AEB;
+          border: 1px solid #384AEB;
           width: 80px;
+          height: 1px;
+          float: right;
         }
       }
 
@@ -268,55 +273,88 @@ main {
         gap: 10px;
 
         .cardTrend {
-          position: relative;
+          .productImgDiv {
+            position: relative;
 
-          .hoverProductName {
+            .hoverProductBasket {
 
-            position: absolute;
+              position: absolute;
 
-            bottom: 0;
-            background-color: #FFFFFFCC;
-            //background-color: red;
-            height: 0;
-            width: 100%;
-            overflow: hidden;
-            transition: 500ms;
+              bottom: 0;
+              background-color: #FFFFFFCC;
+              //background-color: red;
+              height: 0;
+              width: 100%;
+              overflow: hidden;
+              transition: 500ms;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
-            div {
-              padding: 10px 0;
-              margin-top: 50%;
-              color: #FFFFFF;
+              .productBasketBox {
 
-              width: 60%;
-              background-color: #384AEB;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+                gap: 10px;
 
-              p {
-                font-size: 20px;
-                font-weight: 400;
-                font-family: "Oswald", sans-serif;
-                margin: 5px 0 10px 20px;
+                i {
+
+                  padding: 10px;
+                  background-color: #8894FF;
+
+                }
+
+                i:hover {
+
+                  background-color: #384AEB;
+                }
+
+
+
+
+
               }
 
-              span {
-                margin-left: 20px;
-                font-size: 13px;
-              }
 
             }
-
-
           }
+          .productNameDiv {
+            padding: 10px 0;
+            text-align: center;
+            color: #7B7B7B;
 
+            h4 {
+              margin: 10px 0;
+              color: #000000;
+              a{
+               
+                font-family: "Oswald", "sans-serif";
+                font-size: 20px;
+                
+              }
+              
+            }
+            h4:hover {
+              color: #384AEB;
+            }
+
+            span {
+              font-family: "Roboto";
+              font-size: 18px;
+              font-weight: 500;
+              color: #777777;
+            }
+          }
         }
 
         .cardTrend:hover {
-          .hoverProductName {
-            height: 100%;
+          .hoverProductBasket {
+            height: 80px;
             width: 100%;
           }
         }
-
-
       }
     }
 
@@ -325,47 +363,181 @@ main {
 
   @media screen and (max-width:855px) {
     #trendingProduct {
+      padding: 10px 0;
       .container {
         .trendingProductContainer {
-
-          #three {
-            display: none;
+          grid-template-columns: auto auto;
+          .cardTrend {
+            .productImgDiv {
+              img{
+                width: 100%;
+                aspect-ratio: 1/1;
+              }
+           
           }
-
-
-
-
+  
         }
-
       }
-
+  
+  
     }
   }
-
+  }
   @media screen and (max-width:542px) {
     #trendingProduct {
+      padding: 10px 10px;
       .container {
         .trendingProductContainer {
-
-          #three {
-            display: none;
+          grid-template-columns: auto;
+          .cardTrend {
+            .productImgDiv {
+              img{
+                width: 100%;
+                aspect-ratio: 1/1;
+              }
+           
           }
-
-          #two {
-            display: none;
-          }
-
-
-
-
+  
         }
       }
-
-
+  
+  
     }
+  }
   }
 
   // trendingProduct end
+
+
+  // bestSellers
+  #bestSellers {
+    background-color: #FDFDFD;
+    padding: 10px 0;
+
+    .container {
+      .bestSellersHeading {
+        padding: 20px 0px;
+        width: 250px;
+
+        h2 {
+          font-size: 36px;
+          font-weight: 600;
+          font-family: "Oswald", 'sanf-serif';
+        }
+
+        p {
+          font-size: 14px;
+          color: #7B7B7B;
+        }
+
+        hr {
+          border: 1px solid #384AEB;
+          width: 80px;
+          height: 1px;
+          float: right;
+        }
+      }
+
+      .bestSellersContainer {
+        display: grid;
+   
+       
+
+        .cardTrend {
+          .productImgDiv {
+            img{
+              width: 100%;
+              aspect-ratio: 1/1;
+             
+            }
+            position: relative;
+
+            .hoverProductBasket {
+
+              position: absolute;
+
+              bottom: 0;
+              background-color: #FFFFFFCC;
+              //background-color: red;
+              height: 0;
+              width: 100%;
+              overflow: hidden;
+              transition: 500ms;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .productBasketBox {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+                gap: 10px;
+
+                i {
+
+                  padding: 10px;
+                  background-color: #8894FF;
+
+                }
+
+                i:hover {
+
+                  background-color: #384AEB;
+                }
+
+
+
+
+
+              }
+
+
+            }
+          }
+          .productNameDiv {
+            padding: 10px 0;
+            text-align: center;
+            color: #7B7B7B;
+
+            h4 {
+              margin: 10px 0;
+              color: #000000;
+              a{
+               
+                font-family: "Oswald", "sans-serif";
+                font-size: 20px;
+                
+              }
+              
+            }
+            h4:hover {
+              color: #384AEB;
+            }
+
+            span {
+              font-family: "Roboto";
+              font-size: 18px;
+              font-weight: 500;
+              color: #777777;
+            }
+          }
+        }
+
+        .cardTrend:hover {
+          .hoverProductBasket {
+            height: 80px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  // bestSellers end
 
   // percentSection start
   #percentSection {

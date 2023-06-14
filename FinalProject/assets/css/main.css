@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +24,7 @@ img {
 * {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 15px;
 }
 
 .container {
@@ -285,10 +286,12 @@ main #mainCarusel .mainCaruselContainer .card:hover .hoverProductName {
   }
 }
 main #trendingProduct {
+  background-color: #FDFDFD;
   padding: 10px 0;
 }
 main #trendingProduct .container .trendingProductHeading {
   padding: 20px 0px;
+  width: 250px;
 }
 main #trendingProduct .container .trendingProductHeading h2 {
   font-size: 36px;
@@ -297,20 +300,23 @@ main #trendingProduct .container .trendingProductHeading h2 {
 }
 main #trendingProduct .container .trendingProductHeading p {
   font-size: 14px;
+  color: #7B7B7B;
 }
 main #trendingProduct .container .trendingProductHeading hr {
-  border: 2px solid #384AEB;
+  border: 1px solid #384AEB;
   width: 80px;
+  height: 1px;
+  float: right;
 }
 main #trendingProduct .container .trendingProductContainer {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend {
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv {
   position: relative;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName {
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket {
   position: absolute;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -318,40 +324,158 @@ main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProd
   width: 100%;
   overflow: hidden;
   transition: 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName div {
-  padding: 10px 0;
-  margin-top: 50%;
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FFFFFF;
-  width: 60%;
+  gap: 10px;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i {
+  padding: 10px;
+  background-color: #8894FF;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i:hover {
   background-color: #384AEB;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName div p {
+main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv {
+  padding: 10px 0;
+  text-align: center;
+  color: #7B7B7B;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv h4 {
+  margin: 10px 0;
+  color: #000000;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv h4 a {
+  font-family: "Oswald", "sans-serif";
   font-size: 20px;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  margin: 5px 0 10px 20px;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend .hoverProductName div span {
-  margin-left: 20px;
-  font-size: 13px;
+main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv h4:hover {
+  color: #384AEB;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend:hover .hoverProductName {
-  height: 100%;
+main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv span {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: #777777;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend:hover .hoverProductBasket {
+  height: 80px;
   width: 100%;
 }
 @media screen and (max-width: 855px) {
-  main #trendingProduct .container .trendingProductContainer #three {
-    display: none;
+  main #trendingProduct {
+    padding: 10px 0;
+  }
+  main #trendingProduct .container .trendingProductContainer {
+    grid-template-columns: auto auto;
+  }
+  main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv img {
+    width: 100%;
+    aspect-ratio: 1/1;
   }
 }
 @media screen and (max-width: 542px) {
-  main #trendingProduct .container .trendingProductContainer #three {
-    display: none;
+  main #trendingProduct {
+    padding: 10px 10px;
   }
-  main #trendingProduct .container .trendingProductContainer #two {
-    display: none;
+  main #trendingProduct .container .trendingProductContainer {
+    grid-template-columns: auto;
   }
+  main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv img {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+main #bestSellers {
+  background-color: #FDFDFD;
+  padding: 10px 0;
+}
+main #bestSellers .container .bestSellersHeading {
+  padding: 20px 0px;
+  width: 250px;
+}
+main #bestSellers .container .bestSellersHeading h2 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Oswald", "sanf-serif";
+}
+main #bestSellers .container .bestSellersHeading p {
+  font-size: 14px;
+  color: #7B7B7B;
+}
+main #bestSellers .container .bestSellersHeading hr {
+  border: 1px solid #384AEB;
+  width: 80px;
+  height: 1px;
+  float: right;
+}
+main #bestSellers .container .bestSellersContainer {
+  display: grid;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv {
+  position: relative;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .hoverProductBasket {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  gap: 10px;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i {
+  padding: 10px;
+  background-color: #8894FF;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i:hover {
+  background-color: #384AEB;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv {
+  padding: 10px 0;
+  text-align: center;
+  color: #7B7B7B;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv h4 {
+  margin: 10px 0;
+  color: #000000;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv h4 a {
+  font-family: "Oswald", "sans-serif";
+  font-size: 20px;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv h4:hover {
+  color: #384AEB;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv span {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: #777777;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend:hover .hoverProductBasket {
+  height: 80px;
+  width: 100%;
 }
 main #percentSection {
   padding: 100px 0;
