@@ -40,14 +40,14 @@ img {
   width: 154px;
   border-radius: 30px;
   background-color: #384AEB;
-  border: 2px solid #384AEB;
+  border: 1px solid #384AEB;
   color: #ffffff;
 }
 
 .btn:hover {
   background-color: transparent;
   transition: 600ms;
-  border: 2px solid #384AEB;
+  border: 1px solid #384AEB;
   color: #000000;
   font-weight: bold;
 }
@@ -514,4 +514,153 @@ footer {
   color: aliceblue;
   background: #000428; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#singleProduct .container .pageNotification {
+  padding: 25px 0;
+  background-color: #EFF5F8;
+  text-align: center;
+}
+#singleProduct .container .pageNotification p {
+  font-weight: bold;
+}
+#singleProduct .container .pageNotification p span {
+  font-weight: 500;
+  color: #384AEB;
+}
+#singleProduct .container .productDetails {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#singleProduct .container .productDetails .productImageArea {
+  width: 50%;
+}
+#singleProduct .container .productDetails .productImageArea img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+#singleProduct .container .productDetails .productDescriptonArea {
+  width: 40%;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton h3 {
+  font-size: 24px;
+  font-family: "Oswald", "sans-serif";
+  font-weight: bold;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productCategory {
+  color: #807777;
+  font-size: 14px;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .rating {
+  color: #E3C01C;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productPrice p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #384AEB;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productPrice p span {
+  color: #807777;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productInformation {
+  color: #807777;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton hr {
+  border: 1px solid #DEE2E6;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productButton {
+  color: #807777;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productButton input {
+  text-align: center;
+  height: 30px;
+  border: 1px solid #DEE2E6;
+  border-radius: 5px;
+}
+#singleProduct .container .productDetails .productDescriptonArea .productDescripton .productButton p {
+  font-size: 16px;
+}
+#singleProduct .container .comments_specification {
+  border: 2px solid #EFF5F8;
+}
+#singleProduct .container .comments_specification .comments_specification_heading {
+  padding: 15px 0;
+  background-color: #EFF5F8;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#singleProduct .container .comments_specification .comments_specification_heading p {
+  font-family: "Oswald", "sanf-serif";
+  transition: 500ms;
+}
+#singleProduct .container .comments_specification .comments_specification_heading p:hover {
+  color: #384AEB;
+}
+#singleProduct .container .comments_specification_content .specification ul {
+  padding: 10px 20px;
+}
+#singleProduct .container .comments_specification_content .specification ul li {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DEE2E6;
+}
+#singleProduct .container .comments_specification_content .specification ul li p, #singleProduct .container .comments_specification_content .specification ul li span {
+  color: #807777;
+  font-family: "Oswald", "sanf-serif";
+}
+#singleProduct .container .comments_specification_content .comments {
+  padding: 10px 20px;
+}
+#singleProduct .container .comments_specification_content .comments form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#singleProduct .container .comments_specification_content .comments form p {
+  font-family: "Oswald", "sanf-serif";
+}
+#singleProduct .container .comments_specification_content .comments form input {
+  height: 30px;
+  border: 1px solid #DEE2E6;
+  width: 60%;
+}
+#singleProduct .container .comments_specification_content .comments form button {
+  border: none;
+  height: 38px;
+  width: 154px;
+}
+#singleProduct .container .comments_specification_content .comments .productComments {
+  margin: 15px 0;
+}
+#singleProduct .container .comments_specification_content .comments .productComments .person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#singleProduct .container .comments_specification_content .comments .productComments .person p {
+  font-size: 16px;
+  font-family: "Oswald", "sanf-serif";
+}
+#singleProduct .container .comments_specification_content .comments .productComments .person span {
+  font-size: 13px;
+  font-family: "Oswald", "sanf-serif";
+  color: #807777;
+}
+#singleProduct .container .comments_specification_content .comments .productComments .prodcutComments {
+  color: #807777;
 }
