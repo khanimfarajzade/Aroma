@@ -525,8 +525,9 @@ footer {
   font-weight: bold;
 }
 #singleProduct .pageNotification p span {
-  font-weight: 500;
+  font-weight: bold;
   color: #384aeb;
+  font-family: "Oswald", "sans-serif";
 }
 #singleProduct .container .productDetails {
   margin: 40px 0;
@@ -696,12 +697,13 @@ footer {
   font-weight: bold;
 }
 .pageNotification p span {
-  font-weight: 500;
+  font-weight: bold;
   color: #384aeb;
+  font-family: "Oswald", "sans-serif";
 }
 
 #productCategory {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   padding: 10px 0;
 }
 #productCategory .container .productCategoryContainer {
@@ -711,31 +713,37 @@ footer {
 #productCategory .container .productCategoryContainer .browseCardCategory {
   width: 20%;
 }
-#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory, #productCategory .container .productCategoryContainer .browseCardCategory .productFilters {
+#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory,
+#productCategory .container .productCategoryContainer .browseCardCategory .productFilters {
   margin-bottom: 20px;
-  background-color: #F1F6F7;
+  background-color: #f1f6f7;
   color: #777777;
 }
-#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory div, #productCategory .container .productCategoryContainer .browseCardCategory .productFilters div {
+#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory div,
+#productCategory .container .productCategoryContainer .browseCardCategory .productFilters div {
   font-size: 18px;
   font-family: "Oswald", "sans-serif";
   padding: 10px 0px 10px 10px;
-  color: #FFFFFF;
-  background-color: #384AEB;
+  color: #ffffff;
+  background-color: #384aeb;
 }
-#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory p, #productCategory .container .productCategoryContainer .browseCardCategory .productFilters p {
+#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory p,
+#productCategory .container .productCategoryContainer .browseCardCategory .productFilters p {
   margin-bottom: 10px;
   color: #000000;
 }
-#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory ul, #productCategory .container .productCategoryContainer .browseCardCategory .productFilters ul {
+#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory ul,
+#productCategory .container .productCategoryContainer .browseCardCategory .productFilters ul {
   padding: 10px 0;
   margin-left: 10px;
 }
-#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory ul li, #productCategory .container .productCategoryContainer .browseCardCategory .productFilters ul li {
+#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory ul li,
+#productCategory .container .productCategoryContainer .browseCardCategory .productFilters ul li {
   margin-bottom: 10px;
 }
-#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory hr, #productCategory .container .productCategoryContainer .browseCardCategory .productFilters hr {
-  border: 1px solid #EEEEEE;
+#productCategory .container .productCategoryContainer .browseCardCategory .browseCategory hr,
+#productCategory .container .productCategoryContainer .browseCardCategory .productFilters hr {
+  border: 1px solid #eeeeee;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer {
   display: grid;
@@ -765,20 +773,20 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 10px;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i {
   padding: 10px;
-  background-color: #8894FF;
+  background-color: #8894ff;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i:hover {
-  background-color: #384AEB;
+  background-color: #384aeb;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productNameDiv {
   padding: 10px 0;
   text-align: center;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productNameDiv h4 {
   margin: 10px 0;
@@ -789,7 +797,7 @@ footer {
   font-size: 20px;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productNameDiv h4:hover {
-  color: #384AEB;
+  color: #384aeb;
 }
 #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productNameDiv span {
   font-family: "Roboto";
@@ -835,5 +843,118 @@ footer {
   #productCategory .container .productCategoryContainer .cardTrendContainer .cardTrend .productImgDiv img {
     width: 100%;
     aspect-ratio: 1/1;
+  }
+}
+#register {
+  background-color: #fbfbfc;
+}
+#register .pageNotification {
+  padding: 25px 0;
+  background-color: #eff5f8;
+  text-align: center;
+}
+#register .pageNotification p {
+  font-weight: bold;
+}
+#register .pageNotification p span {
+  font-weight: bold;
+  color: #384aeb;
+  font-family: "Oswald", "sans-serif";
+}
+#register .container .registerContainer {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#register .container .registerContainer .loginNow {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #384aeb;
+  color: #ffffff;
+  padding: 0 50px;
+}
+#register .container .registerContainer .loginNow h2 {
+  font-family: "Oswald", "sans-serif";
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#register .container .registerContainer .loginNow p {
+  text-align: center;
+  max-width: 390px;
+  margin-bottom: 28px;
+}
+#register .container .registerContainer .loginNow .loginBtn {
+  border: 1px solid #ffffff;
+}
+#register .container .registerContainer .loginNow .loginBtn:hover {
+  background-color: #c5322d;
+  border: none;
+  color: #ffffff;
+}
+#register .container .registerContainer .createAccount {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#register .container .registerContainer .createAccount h2 {
+  font-family: "Oswald", "sans-serif";
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#register .container .registerContainer .createAccount form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#register .container .registerContainer .createAccount form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+#register .container .registerContainer .createAccount form button {
+  height: 40px;
+  background-color: #c5322d;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+#register .container .registerContainer .createAccount form div,
+#register .container .registerContainer .createAccount form a {
+  padding: 0 10px;
+  color: #777777;
+}
+#register .container .registerContainer .createAccount form a {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #register {
+    background-color: #ffffff;
+  }
+  #register .container .registerContainer {
+    height: auto;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  #register .container .registerContainer .loginNow {
+    width: 100%;
+    padding: 50px 50px;
+  }
+  #register .container .registerContainer .createAccount {
+    width: 100%;
+    padding: 50px;
+  }
+  #register .container .registerContainer .createAccount form {
+    width: 100%;
   }
 }

@@ -1,0 +1,124 @@
+#register {
+  background-color: #fbfbfc;
+  .pageNotification {
+    padding: 25px 0;
+    background-color: #eff5f8;
+    text-align: center;
+    p {
+      font-weight: bold;
+      span {
+        font-weight: bold;
+        color: #384aeb;
+        font-family: "Oswald", "sans-serif";
+      }
+    }
+  }
+  .container {
+    .registerContainer {
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+      .loginNow {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #384aeb;
+        color: #ffffff;
+        padding: 0 50px;
+
+        h2 {
+          font-family: "Oswald", "sans-serif";
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        p {
+          text-align: center;
+          max-width: 390px;
+          margin-bottom: 28px;
+        }
+        .loginBtn {
+          border: 1px solid #ffffff;
+        }
+        .loginBtn:hover {
+          background-color: #c5322d;
+          border: none;
+          color: #ffffff;
+        }
+      }
+      .createAccount {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          font-family: "Oswald", "sans-serif";
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+        form {
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+
+          gap: 15px;
+          input {
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #cccccc;
+          }
+          button {
+            height: 40px;
+            background-color: #c5322d;
+            border: none;
+            color: #ffffff;
+            font-weight: bold;
+          }
+          div,
+          a {
+            padding: 0 10px;
+            color: #777777;
+          }
+          a {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #register {
+    background-color: #ffffff;
+
+    .container {
+      .registerContainer {
+        height: auto;
+        flex-direction: column;
+
+        padding: 0 10px;
+
+        .loginNow {
+          width: 100%;
+          padding: 50px 50px;
+        }
+        .createAccount {
+          width: 100%;
+          padding: 50px;
+          form {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

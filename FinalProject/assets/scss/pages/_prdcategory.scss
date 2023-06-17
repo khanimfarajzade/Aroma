@@ -1,221 +1,191 @@
 .pageNotification {
-    padding: 25px 0;
-    background-color: #eff5f8;
-    text-align: center;
-    p {
+  padding: 25px 0;
+  background-color: #eff5f8;
+  text-align: center;
+  p {
+    font-weight: bold;
+    span {
+      
       font-weight: bold;
-      span {
-        font-weight: 500;
-        color: #384aeb;
-      }
+      color: #384aeb;
+      font-family: "Oswald", "sans-serif";
+    
     }
   }
+}
 
 // productCategory
- #productCategory {
-    
-    background-color: #FDFDFD;
-    padding: 10px 0;
+#productCategory {
+  background-color: #fdfdfd;
+  padding: 10px 0;
 
+  .container {
+    .productCategoryContainer {
+      display: flex;
+      justify-content: space-between;
+      .browseCardCategory {
+        width: 20%;
+        .browseCategory,
+        .productFilters {
+          margin-bottom: 20px;
+          background-color: #f1f6f7;
+          color: #777777;
+
+          div {
+            font-size: 18px;
+            font-family: "Oswald", "sans-serif";
+            padding: 10px 0px 10px 10px;
+            color: #ffffff;
+            background-color: #384aeb;
+          }
+          p {
+            margin-bottom: 10px;
+            color: #000000;
+          }
+          ul {
+            padding: 10px 0;
+            margin-left: 10px;
+            li {
+              margin-bottom: 10px;
+            }
+          }
+          hr {
+            border: 1px solid #eeeeee;
+          }
+        }
+      }
+      .cardTrendContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        width: 75%;
+
+        .cardTrend {
+          img {
+            width: 100%;
+          }
+          .productImgDiv {
+            position: relative;
+
+            .hoverProductBasket {
+              position: absolute;
+
+              bottom: 0;
+              background-color: #ffffffcc;
+              //background-color: red;
+              height: 0;
+              width: 100%;
+              overflow: hidden;
+              transition: 500ms;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .productBasketBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                gap: 10px;
+
+                i {
+                  padding: 10px;
+                  background-color: #8894ff;
+                }
+
+                i:hover {
+                  background-color: #384aeb;
+                }
+              }
+            }
+          }
+          .productNameDiv {
+            padding: 10px 0;
+            text-align: center;
+            color: #7b7b7b;
+
+            h4 {
+              margin: 10px 0;
+              color: #000000;
+              a {
+                font-family: "Oswald", "sans-serif";
+                font-size: 20px;
+              }
+            }
+            h4:hover {
+              color: #384aeb;
+            }
+
+            span {
+              font-family: "Roboto";
+              font-size: 18px;
+              font-weight: 500;
+              color: #777777;
+            }
+          }
+        }
+
+        .cardTrend:hover {
+          .hoverProductBasket {
+            height: 80px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 855px) {
+  #productCategory {
+    padding: 10px 15px;
     .container {
-      
-      .productCategoryContainer{
-        display: flex;
-        justify-content: space-between;
-        .browseCardCategory{
-            width: 20%;
-            .browseCategory,  .productFilters{
-              margin-bottom: 20px;
-                background-color: #F1F6F7;
-                color: #777777;
-                
-                div{
-                    font-size: 18px;
-                    font-family: "Oswald" ,'sans-serif';
-                    padding: 10px 0px 10px 10px;
-                    color: #FFFFFF;
-                    background-color: #384AEB;
-                }
-                p{
-                    margin-bottom: 10px;
-                    color: #000000;
-                }
-                ul{
-                    padding: 10px 0;
-                    margin-left: 10px;
-                    li{
-                        margin-bottom: 10px;
-                    }
-                }
-                hr{
-                    border: 1px solid #EEEEEE;
-                }
-            }
-          
+      .productCategoryContainer {
+        .browseCardCategory {
+          width: 35%;
         }
+
         .cardTrendContainer {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            gap: 10px;
-            width: 75%;
-    
-            .cardTrend {
-                img{
-                    width: 100%;
-                }
-              .productImgDiv {
-                position: relative;
-    
-                .hoverProductBasket {
-    
-                  position: absolute;
-    
-                  bottom: 0;
-                  background-color: #FFFFFFCC;
-                  //background-color: red;
-                  height: 0;
-                  width: 100%;
-                  overflow: hidden;
-                  transition: 500ms;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-    
-                  .productBasketBox {
-    
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #FFFFFF;
-                    gap: 10px;
-    
-                    i {
-    
-                      padding: 10px;
-                      background-color: #8894FF;
-    
-                    }
-    
-                    i:hover {
-    
-                      background-color: #384AEB;
-                    }
-    
-    
-    
-    
-    
-                  }
-    
-    
-                }
-              }
-              .productNameDiv {
-                padding: 10px 0;
-                text-align: center;
-                color: #7B7B7B;
-    
-                h4 {
-                  margin: 10px 0;
-                  color: #000000;
-                  a{
-                   
-                    font-family: "Oswald", "sans-serif";
-                    font-size: 20px;
-                    
-                  }
-                  
-                }
-                h4:hover {
-                  color: #384AEB;
-                }
-    
-                span {
-                  font-family: "Roboto";
-                  font-size: 18px;
-                  font-weight: 500;
-                  color: #777777;
-                }
-              }
-            }
-    
-            .cardTrend:hover {
-              .hoverProductBasket {
-                height: 80px;
+          width: 60%;
+          grid-template-columns: auto auto;
+          .cardTrend {
+            .productImgDiv {
+              img {
                 width: 100%;
+                aspect-ratio: 1/1;
               }
             }
           }
-      }
-
-      
-    }
-
-
-  }
-
-  @media screen and (max-width:855px) {
-    #productCategory {
-      padding: 10px 15px;
-      .container {
-        
-        .productCategoryContainer{
-            .browseCardCategory{
-                width: 35%;
-            }
-
-            .cardTrendContainer {
-                width: 60%;
-                grid-template-columns: auto auto;
-                .cardTrend {
-                  .productImgDiv {
-                    img{
-                      width: 100%;
-                      aspect-ratio: 1/1;
-                    }
-                 
-                }
-        
-              }
-            }
         }
-        
-  
-  
-    }
-  }
-  }
-  @media screen and (max-width:542px) {
-    #productCategory {
-        padding: 10px 15px;
-        .container {
-          
-          .productCategoryContainer{
-            flex-direction: column;
-              .browseCardCategory{
-                  width: 100%;
-              }
-  
-              .cardTrendContainer {
-                  width: 100%;
-                  grid-template-columns: auto;
-                  .cardTrend {
-                    .productImgDiv {
-                      img{
-                        width: 100%;
-                        aspect-ratio: 1/1;
-                      }
-                   
-                  }
-          
-                }
-              }
-          }
-          
-    
-    
       }
     }
   }
+}
+@media screen and (max-width: 542px) {
+  #productCategory {
+    padding: 10px 15px;
+    .container {
+      .productCategoryContainer {
+        flex-direction: column;
+        .browseCardCategory {
+          width: 100%;
+        }
 
-  // productCategory end
+        .cardTrendContainer {
+          width: 100%;
+          grid-template-columns: auto;
+          .cardTrend {
+            .productImgDiv {
+              img {
+                width: 100%;
+                aspect-ratio: 1/1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// productCategory end
