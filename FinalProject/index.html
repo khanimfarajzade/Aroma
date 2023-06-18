@@ -16,6 +16,8 @@
 
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
   <title>Aroma</title>
+ 
+  
 </head>
 
 <body>
@@ -25,28 +27,28 @@
         <img src="./assets/imgs/logo.png.webp" alt="logo" />
 
         <ul>
-          <li>Home</li>
-          <select name="shop" id="shop">
+          <li><a href="./index.html" target="_blank">Home</a> </li>
+          <!-- <select name="shop" id="shop">
             <option value="shop" disabled selected>Shop</option>
             <option value="saab">Saab</option>
             <option value="mercedes">Mercedes</option>
             <option value="audi">Audi</option>
-          </select>
-          <li>Blog</li>
-          <select name="pages" id="pages">
+          </select> -->
+          <li><a href="./assets/pages/prdcategory.html" target="_blank">Products</a> </li>
+          <!-- <select name="pages" id="pages">
             <option value="pages" disabled selected>Pages</option>
             <option value="saab">Saab</option>
             <option value="mercedes">Mercedes</option>
             <option value="audi">Audi</option>
-          </select>
-          <li>Contact</li>
+          </select> -->
+          <li><a href="./assets/pages/login.html" target="_blank">Login</a></li>
         </ul>
         <div class="buttonMenu">
           <div class="iconBox">
             <i class="fa fa-solid fa-search"></i>
             <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
           </div>
-          <button type="button" class="btn navBtn">Buy Now</button>
+          <button type="button" class="btn navBtn"><a href="./assets/pages/register.html" target="_blank">Sign Up</a> </button>
         </div>
       </div>
 
@@ -57,28 +59,28 @@
         </div>
         <div class="mobilList">
           <ul>
-            <li>Home</li>
-            <select name="shop" id="shop">
+            <li><a href="./index.html" target="_blank">Home</a> </li>
+            <!-- <select name="shop" id="shop">
               <option value="shop" disabled selected>Shop</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
               <option value="audi">Audi</option>
-            </select>
-            <li>Blog</li>
-            <select name="pages" id="pages">
+            </select> -->
+            <li><a href="./assets/pages/prdcategory.html" target="_blank">Products</a> </li>
+            <!-- <select name="pages" id="pages">
               <option value="pages" disabled selected>Pages</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
               <option value="audi">Audi</option>
-            </select>
-            <li>Contact</li>
+            </select> -->
+            <li><a href="./assets/pages/login.html" target="_blank">Login</a></li>
           </ul>
           <div class="buttonMenu">
             <div class="iconBox">
               <i class="fa fa-solid fa-search"></i>
               <i class="fa-solid fa-cart-shopping"></i><sup>3</sup>
             </div>
-            <button type="button" class="btn navBtn">Buy Now</button>
+            <button type="button" class="btn navBtn"><a href="./assets/pages/register.html" target="_blank">Sign Up</a> </button>
           </div>
         </div>
       </div>
@@ -139,7 +141,7 @@
 
           </div>
         </div>
-        <div class="card"><img src="./assets/imgs/hero-slide1.png.webp" alt="foto">
+        <div class="card"><img src="./assets/imgs/hero-slide2.png.webp" alt="foto">
           <div class="hoverProductName">
             <div>
               <p>Wireless Headphone</p>
@@ -148,7 +150,7 @@
 
           </div>
         </div>
-        <div class="card"><img src="./assets/imgs/hero-slide1.png.webp" alt="foto">
+        <div class="card" id="two"><img src="./assets/imgs/hero-slide3.png.webp" alt="foto">
           <div class="hoverProductName">
             <div>
               <p>Wireless Headphone</p>
@@ -157,7 +159,7 @@
 
           </div>
         </div>
-        <div class="card"><img src="./assets/imgs/hero-slide1.png.webp" alt="foto">
+        <div class="card" id="three"><img src="./assets/imgs/hero-slide1.png.webp" alt="foto">
           <div class="hoverProductName">
             <div>
               <p>Wireless Headphone</p>
@@ -166,6 +168,7 @@
 
           </div>
         </div>
+       
 
       </div>
 
@@ -181,7 +184,7 @@
           <hr>
         </div>
         <div class="trendingProductContainer">
-          <div class="cardTrend">
+          <!-- <div class="cardTrend">
             <div class="productImgDiv">
               <img src="./assets/imgs/product1.png.webp" alt="foto">
               <div class="hoverProductBasket">
@@ -194,13 +197,13 @@
             </div>
             <div class="productNameDiv">
               <p>Accessories</p>
-               <h4><a href="#" target="_blank">Quartz Belt Watch</a></h4>
+               <h4><a href="./assets/pages/product.html" target="_blank">Quartz Belt Watch</a></h4>
               <span>$150.00</span>
             </div>
             
             
-          </div>
-          <div class="cardTrend">
+          </div> -->
+          <!-- <div class="cardTrend">
             <div class="productImgDiv">
               <img src="./assets/imgs/product2.png.webp" alt="foto">
               <div class="hoverProductBasket">
@@ -332,7 +335,7 @@
             </div>
             
             
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -531,6 +534,7 @@
 
   <script src="./assets/js/nav.js"></script>
   <script src="./assets/js/carusel.js"></script>
+  <script src="./assets/js/main.js"></script>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -541,17 +545,16 @@
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        prevArrow:`<button class="slick-prev"> <i class="fa-solid fa-arrow-left"></i> </button>`,
+        nextArrow:`<button class="slick-next"> <i class="fa-solid fa-arrow-right"></i> </button>`,
+       // arrows: true,
+       // dots: true,
+ 
+  
         responsive: [
           {
             breakpoint: 769,
             settings: {
-              // mobileFirst: true,
-              // infinite: true,
-              // speed: 300,
-              // slidesToShow: 1,
-              // centerMode: false,
-              // variableWidth: true,
-              // focusOnSelect: true,
               infinite: true,
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -562,13 +565,6 @@
           {
             breakpoint: 545,
             settings: {
-              // mobileFirst: true,
-              // infinite: true,
-              // speed: 300,
-              // slidesToShow: 1,
-              // centerMode: false,
-              // variableWidth: true,
-              // focusOnSelect: true,
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -586,17 +582,12 @@
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
+        prevArrow:`<button class="slick-prev"> <i class="fa-solid fa-arrow-left"></i> </button>`,
+        nextArrow:`<button class="slick-next"> <i class="fa-solid fa-arrow-right"></i> </button>`,
         responsive: [
         {
             breakpoint: 944,
             settings: {
-              // mobileFirst: true,
-              // infinite: true,
-              // speed: 300,
-              // slidesToShow: 1,
-              // centerMode: false,
-              // variableWidth: true,
-              // focusOnSelect: true,
               infinite: true,
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -607,13 +598,6 @@
           {
             breakpoint: 769,
             settings: {
-              // mobileFirst: true,
-              // infinite: true,
-              // speed: 300,
-              // slidesToShow: 1,
-              // centerMode: false,
-              // variableWidth: true,
-              // focusOnSelect: true,
               infinite: true,
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -624,13 +608,6 @@
           {
             breakpoint: 545,
             settings: {
-              // mobileFirst: true,
-              // infinite: true,
-              // speed: 300,
-              // slidesToShow: 1,
-              // centerMode: false,
-              // variableWidth: true,
-              // focusOnSelect: true,
               infinite: true,
               slidesToShow: 1,
               slidesToScroll: 1,

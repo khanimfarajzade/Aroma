@@ -56,7 +56,7 @@ img {
   position: fixed;
   width: 100%;
   z-index: 1;
-  border-bottom: 2px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   display: flex;
   align-items: center;
   height: 80px;
@@ -71,7 +71,16 @@ img {
 .navbar .container .detskopMenu ul {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
+}
+.navbar .container .detskopMenu ul li {
+  transition: 350ms;
+}
+.navbar .container .detskopMenu ul li a {
+  font-weight: bold;
+}
+.navbar .container .detskopMenu ul li:hover {
+  color: #384aeb;
 }
 .navbar .container .detskopMenu ul select {
   border: none;
@@ -86,13 +95,15 @@ img {
 .navbar .container .detskopMenu .buttonMenu .navBtn {
   background-color: #ffffff;
   color: #000000;
+  border: 1px solid #EEEEEE;
+}
+.navbar .container .detskopMenu .buttonMenu .navBtn a {
   font-weight: bold;
-  border: 2px solid #c4c1c1;
 }
 .navbar .container .detskopMenu .buttonMenu .navBtn:hover {
   background-color: transparent;
   transition: 600ms;
-  border: 2px solid #3e4fea;
+  border: 1px solid #3e4fea;
   color: #000000;
   font-weight: bold;
 }
@@ -125,6 +136,15 @@ img {
     display: flex;
     flex-direction: column;
   }
+  .navbar .container .mobilMenu .mobilList ul li {
+    transition: 350ms;
+  }
+  .navbar .container .mobilMenu .mobilList ul li a {
+    font-weight: bold;
+  }
+  .navbar .container .mobilMenu .mobilList ul li:hover {
+    color: #384aeb;
+  }
   .navbar .container .mobilMenu .mobilList ul select {
     border: none;
     font-size: 16px;
@@ -137,13 +157,15 @@ img {
   .navbar .container .mobilMenu .mobilList .buttonMenu .navBtn {
     background-color: #ffffff;
     color: #000000;
+    border: 1px solid #EEEEEE;
+    transition: 600ms;
+  }
+  .navbar .container .mobilMenu .mobilList .buttonMenu .navBtn a {
     font-weight: bold;
-    border: 2px solid #c4c1c1;
   }
   .navbar .container .mobilMenu .mobilList .buttonMenu .navBtn:hover {
     background-color: transparent;
-    transition: 600ms;
-    border: 2px solid #3e4fea;
+    border: 1px solid #3e4fea;
     color: #000000;
     font-weight: bold;
   }
@@ -235,11 +257,8 @@ main #mainHeroSection .container .mainHeroContent p {
 main #mainCarusel {
   padding: 10px 0;
 }
-main #mainCarusel .mainCaruselContainer {
-  display: flex;
-  gap: 10px;
-}
 main #mainCarusel .mainCaruselContainer .card {
+  margin: 0 10px;
   position: relative;
 }
 main #mainCarusel .mainCaruselContainer .card .hoverProductName {
@@ -398,7 +417,7 @@ main #bestSellers {
 }
 main #bestSellers .container .bestSellersHeading {
   padding: 20px 0px;
-  width: 250px;
+  width: 180px;
 }
 main #bestSellers .container .bestSellersHeading h2 {
   font-size: 36px;
@@ -417,6 +436,9 @@ main #bestSellers .container .bestSellersHeading hr {
 }
 main #bestSellers .container .bestSellersContainer {
   display: grid;
+}
+main #bestSellers .container .bestSellersContainer .cardTrend {
+  margin: 0 10px;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv {
   position: relative;
@@ -957,4 +979,69 @@ footer {
   #register .container .registerContainer .createAccount form {
     width: 100%;
   }
+}
+.mainCaruselContainer {
+  position: relative;
+}
+.mainCaruselContainer .slick-prev,
+.mainCaruselContainer .slick-next {
+  background-color: #384aeb;
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 1;
+  top: 47%;
+  border: none;
+  border-radius: 50%;
+  /* position: absolute;
+      display: block;
+      height: 20px;
+      width: 30px;
+      line-height: 0px;
+      font-size: 0px;
+      cursor: pointer;
+      background: transparent;
+      color: transparent;
+      top: 50%;
+      margin-top: -10px;
+      padding: 0;
+      border: none;
+      outline: none; */
+}
+.mainCaruselContainer .slick-prev i,
+.mainCaruselContainer .slick-next i {
+  font-size: 20px;
+}
+.mainCaruselContainer .slick-prev {
+  left: 0;
+}
+.mainCaruselContainer .slick-next {
+  right: 0;
+}
+
+.bestSellersContainer {
+  position: relative;
+}
+.bestSellersContainer .slick-prev,
+.bestSellersContainer .slick-next {
+  background-color: transparent;
+  color: white;
+  height: 20px;
+  width: 50px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  border: none;
+}
+.bestSellersContainer .slick-prev i,
+.bestSellersContainer .slick-next i {
+  font-size: 24px;
+  color: #384aeb;
+}
+.bestSellersContainer .slick-next {
+  left: 50%;
+}
+.bestSellersContainer .slick-prev {
+  right: 50%;
 }

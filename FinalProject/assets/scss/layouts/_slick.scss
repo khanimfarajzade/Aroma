@@ -1,0 +1,68 @@
+
+.mainCaruselContainer {
+  position: relative;
+  .slick-prev,
+  .slick-next {
+    background-color: #384aeb;
+    color: white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 47%;
+    border: none;
+    border-radius: 50%;
+    i {
+      font-size: 20px;
+    }
+
+    /* position: absolute;
+        display: block;
+        height: 20px;
+        width: 30px;
+        line-height: 0px;
+        font-size: 0px;
+        cursor: pointer;
+        background: transparent;
+        color: transparent;
+        top: 50%;
+        margin-top: -10px;
+        padding: 0;
+        border: none;
+        outline: none; */
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+}
+
+.bestSellersContainer {
+    position: relative;
+    .slick-prev,
+    .slick-next {
+      background-color: transparent;
+      color: white;
+      height: 20px;
+      width: 50px;
+      position: absolute;
+      z-index: 1;
+      bottom: 0%;
+      border: none;
+      i {
+        font-size: 24px;
+        color: #384aeb;
+      }
+  
+    }
+  
+    .slick-next {
+      left: 50%;
+    }
+    .slick-prev {
+      right: 50%;
+    }
+  }

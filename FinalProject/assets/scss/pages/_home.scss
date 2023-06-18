@@ -139,11 +139,14 @@ main {
     padding: 10px 0;
 
     .mainCaruselContainer {
-      display: flex;
+      // // display: flex;
+      // // align-items: center;
+      // // justify-content: space-between;
 
-      gap: 10px;
+     // gap: 10px;
 
       .card {
+        margin: 0 10px;
         position: relative;
 
         .hoverProductName {
@@ -417,7 +420,7 @@ main {
     .container {
       .bestSellersHeading {
         padding: 20px 0px;
-        width: 250px;
+        width: 180px;
 
         h2 {
           font-size: 36px;
@@ -444,6 +447,7 @@ main {
        
 
         .cardTrend {
+          margin: 0 10px;
           .productImgDiv {
             img{
               width: 100%;

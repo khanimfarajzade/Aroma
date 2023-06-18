@@ -2,9 +2,10 @@
   position: fixed;
   width: 100%;
   z-index: 1;
-  border-bottom: 2px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   display: flex;
   align-items: center;
+
   height: 80px;
   background-color: #ffffff;
   .container {
@@ -16,7 +17,22 @@
       ul {
         display: flex;
         align-items: center;
-        gap: 10px;
+       
+        gap: 50px;
+
+        li{
+          a{
+            font-weight: bold;
+          }
+         
+          transition: 350ms;
+        }
+
+        li:hover{
+          color: #384aeb;
+          
+
+        }
 
         select {
           border: none;
@@ -31,13 +47,16 @@
         .navBtn {
           background-color: #ffffff;
           color: #000000;
-          font-weight: bold;
-          border: 2px solid #c4c1c1;
+          
+          border: 1px solid #EEEEEE;
+          a{
+            font-weight: bold;
+          }
         }
         .navBtn:hover {
           background-color: transparent;
           transition: 600ms;
-          border: 2px solid #3e4fea;
+          border: 1px solid #3e4fea;
           color: #000000;
           font-weight: bold;
         }
@@ -77,8 +96,24 @@
           transition: 500ms;
           ul {
             display: flex;
+           
             flex-direction: column;
-
+           
+    
+            li{
+              a{
+                font-weight: bold;
+              }
+             
+              transition: 350ms;
+            }
+    
+            li:hover{
+              color: #384aeb;
+              
+    
+            }
+    
             select {
               border: none;
               font-size: 16px;
@@ -90,14 +125,17 @@
             gap: 20px;
             .navBtn {
               background-color: #ffffff;
-              color: #000000;
-              font-weight: bold;
-              border: 2px solid #c4c1c1;
+              color: #000000; 
+              border: 1px solid #EEEEEE;
+              transition: 600ms;
+              a{
+                font-weight: bold;
+              }
             }
             .navBtn:hover {
               background-color: transparent;
-              transition: 600ms;
-              border: 2px solid #3e4fea;
+             
+              border: 1px solid #3e4fea;
               color: #000000;
               font-weight: bold;
             }
