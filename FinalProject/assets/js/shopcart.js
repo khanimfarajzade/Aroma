@@ -89,12 +89,12 @@ function createCard(data) {
 
       wishlist_arr.push(data);
       wishlist_btn.classList.add("addWish");
-      console.log("elave olundu");
+      console.log("silindi");
     } else {
       wishlist_arr = wishlist_arr.filter((x) => x.id !== data.id);
       wishlist_btn.classList.remove("addWish");
     
-      console.log("silindi");
+      console.log("elave olundu");
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
   });

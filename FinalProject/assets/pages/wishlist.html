@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
     <title>Wishlist</title>
+    
   </head>
   <body>
     <nav class="navbar">
@@ -81,37 +82,19 @@
     </nav>
     <!-- nav end -->
     <main>
-      <div id="wishlist_container">
-        <div class="basket_item"></div>
+      <div class="container">
+        <div class="wishlistHeading">
+          <h2>Product</h2>
+          <hr>
+        </div>
+        <div id="wishlist_container">
+          <div class="basket_item"></div>
+        </div>
       </div>
+      
     </main>
     
-    <script>
-      const wishlist_container = document.getElementById("wishlist_container");
-      let wishlist_arr = [];
-      wishlist_arr = JSON.parse(localStorage.getItem("wishlist"));
-
-      wishlist_arr.forEach((element) => {
-        const div = document.createElement("div");
-        const h1 = document.createElement("h1");
-        const btn = document.createElement("button");
-
-        div.style.border = "1px solid black";
-console.log("xetani tap" , wishlist_arr);
-        h1.innerHTML = element.name;
-        btn.innerHTML = "remove";
-
-        btn.onclick = () => {
-          console.log(element.id);
-          wishlist_arr = wishlist_arr.filter((x) => x.id !== element.id);
-          localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
-          btn.parentElement.remove();
-        };
-
-        div.append(h1, btn);
-        wishlist_container.append(div);
-      });
-    </script>
+    <script src="../js/wishlist.js"> </script>
     <script src="../js/nav.js"></script>
   </body>
 </html>
