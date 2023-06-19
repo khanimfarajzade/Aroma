@@ -69,9 +69,9 @@ function createCard(data) {
   wishlist_btn.innerHTML = `<i class="fa fa-regular fa-heart "></i>`;
 
 
-//   if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
-//     wishlist_btn.classList.add("addWish");
-//   }
+  if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
+    wishlist_btn.classList.add("addWish");
+  }
   // basket
   basket_btn.addEventListener("click", function () {
     //eger bu idli elemnent yoxdursa push et
