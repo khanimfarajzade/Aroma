@@ -12,12 +12,18 @@
         const p = document.createElement("p");
         const dec = document.createElement("button");
         const del = document.createElement("button");
+        const quantity = document.createElement("div");
+        const span = document.createElement("span");
+        const img = document.createElement("img");
+        
 
         h3.innerHTML = element.name;
         inc.innerHTML = "+";
         p.innerHTML = element.count;
         dec.innerHTML = "-";
-        del.innerHTML = "X";
+        span.innerHTML =`${element.price}$` ;
+        img.src = element.src;
+        del.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
 
         //artim
         inc.onclick = () => {
@@ -47,16 +53,25 @@
           del.parentElement.remove();
         };
 
-        div.classList.add("basket_item");
 
-        div.append(h3, inc, p, dec, del);
+        //add class
+        div.classList.add("basket_item");
+        quantity.classList.add("quantity")
+
+
+        //append
+        quantity.append(inc, p, dec,)
+        div.append(img ,h3, quantity, span, del);
         basket_container.append(div);
       });
 
       function getTotal() {
         h2.innerHTML = basket_arr.reduce(
-          (sum, prev) => sum + prev.unitPrice * prev.count,
-          0
-        );
+          (sum, prev) => sum + prev.price * prev.count,
+          0 
+        ) +"$";
+        h2.style.color = "#384aeb";
+        h2.style.fontWeight ="bold";
+        h2.style.fontSize ="24px"
       }
   

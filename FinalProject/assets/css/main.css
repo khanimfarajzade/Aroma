@@ -551,6 +551,20 @@ main #percentSection p {
   }
 }
 
+.pageNotification {
+  padding: 25px 0;
+  background-color: #eff5f8;
+  text-align: center;
+}
+.pageNotification p {
+  font-weight: bold;
+}
+.pageNotification p span {
+  font-weight: bold;
+  color: #384aeb;
+  font-family: "Oswald", "sans-serif";
+}
+
 footer {
   color: aliceblue;
   background: #000428; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
@@ -1078,13 +1092,82 @@ footer {
 }
 
 .container .wishlistHeading {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 0;
+  border-bottom: 2px solid #cccccc;
 }
 .container .wishlistHeading h2 {
+  font-size: 24px;
   font-family: "Oswald", "sans-serif";
+}
+.container .wishlistHeading p, .container .wishlistHeading span {
+  font-family: "Oswald", "sans-serif";
+  font-size: 18px;
+}
+.container .wishlist_container h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.container .wishlist_container button {
+  border: none;
+  color: #ffffff;
+  height: 30px;
+  background-color: transparent;
+}
+.container .wishlist_container button i {
+  color: #384aeb;
   font-size: 24px;
 }
-.container .wishlistHeading hr {
-  margin-top: 20px;
-  border: 1px solid #cccccc;
+.container .wishlist_container p {
+  font-weight: bold;
+}
+.container .wishContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #eeeeee;
+}
+.container .img_div {
+  width: 80px;
+  height: 80px;
+}
+
+.basket_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eeeeee;
+  margin: 10px;
+}
+.basket_item img {
+  height: 80px;
+  width: 80px;
+}
+.basket_item h3 {
+  font-family: "Oswald", "sans-serif";
+  font-size: 20x;
+}
+.basket_item span {
+  font-weight: bold;
+}
+.basket_item button {
+  border: none;
+  background-color: transparent;
+  color: #384aeb;
+}
+.basket_item button i {
+  font-size: 24px;
+}
+.basket_item .quantity {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.basket_item .quantity button {
+  background-color: transparent;
+  border: none;
+  color: #384aeb;
+  font-size: 24px;
+  font-weight: bold;
 }

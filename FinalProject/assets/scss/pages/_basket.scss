@@ -1,0 +1,41 @@
+.basket_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    border-bottom: 2px solid #eeeeee;
+    margin: 10px;
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    h3{
+        font-family: "Oswald" , "sans-serif";
+        font-size: 20x;
+    }
+    span{
+        font-weight: bold;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+        color: #384aeb;
+        i{
+            font-size: 24px;
+        }
+      
+    }
+    .quantity{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        button{
+            background-color: transparent;
+            border: none;
+            color: #384aeb;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    }
+  }

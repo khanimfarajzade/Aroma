@@ -540,3 +540,20 @@ main {
 
   // percentSection end
 }
+
+
+.pageNotification {
+  padding: 25px 0;
+  background-color: #eff5f8;
+  text-align: center;
+  p {
+    font-weight: bold;
+    span {
+      
+      font-weight: bold;
+      color: #384aeb;
+      font-family: "Oswald", "sans-serif";
+    
+    }
+  }
+}
