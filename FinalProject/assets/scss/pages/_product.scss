@@ -184,3 +184,29 @@
    
   }
 }
+
+@media screen and (max-width:768px) {
+  #singleProduct {
+
+  .container {
+   
+    .productDetails {
+      padding: 0 20px;
+     
+      flex-direction: column;
+      
+      .productImageArea {
+        width: 100%;
+
+      }
+      .productDescriptonArea {
+        width: 100%;
+
+       
+      }
+    }
+  
+   
+  }
+}
+}
