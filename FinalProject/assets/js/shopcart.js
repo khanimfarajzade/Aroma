@@ -67,9 +67,11 @@ function createCard(data) {
 
   basket_btn.innerHTML = `<i class="fa-solid fa-cart-shopping"></i>`;
   wishlist_btn.innerHTML = `<i class="fa fa-regular fa-heart "></i>`;
-  if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
-    wishlist_btn.classList.toggle("addWish");
-  }
+
+
+//   if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
+//     wishlist_btn.classList.add("addWish");
+//   }
   // basket
   basket_btn.addEventListener("click", function () {
     //eger bu idli elemnent yoxdursa push et
@@ -82,12 +84,17 @@ function createCard(data) {
 
   // wishlist
   wishlist_btn.addEventListener("click", function () {
+    console.log(wishlist_arr.find((x) => x.id == data.id));
     if (wishlist_arr.find((x) => x.id == data.id) === undefined) {
+
       wishlist_arr.push(data);
       wishlist_btn.classList.add("addWish");
+      console.log("elave olundu");
     } else {
       wishlist_arr = wishlist_arr.filter((x) => x.id !== data.id);
-      wishlist_btn.style.backgroundColor = "#384aeb";
+      wishlist_btn.classList.remove("addWish");
+    
+      console.log("silindi");
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
   });
