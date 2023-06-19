@@ -1,7 +1,5 @@
 main {
-
   padding-top: 80px;
-
 
   // mainHeroSection start
   #mainHeroSection {
@@ -9,11 +7,13 @@ main {
     // background-color: red
     // opacity: 0.8;
 
-    background-image: linear-gradient(to right,
-        #384aeb 35%,
-        #384aeb 25%,
-        #F1F6F7 25%,
-        #F1F6F7 25%);
+    background-image: linear-gradient(
+      to right,
+      #384aeb 35%,
+      #384aeb 25%,
+      #f1f6f7 25%,
+      #f1f6f7 25%
+    );
 
     // yedek color #eceff0
     .container {
@@ -53,7 +53,6 @@ main {
 
   // mainHeroSection responsivlik start
   @media screen and (max-width: 768px) {
-
     #mainHeroSection {
       .container {
         .mainHeroContent {
@@ -68,29 +67,28 @@ main {
           }
         }
       }
-
     }
   }
 
   @media screen and (max-width: 542px) {
-
-
     #mainHeroSection {
       //  height: 100vh;
       // background-color: red
       // opacity: 0.8;
 
-      background-image: linear-gradient(to right,
-          #384aeb 10%,
-          #384aeb 10%,
-          #eceff0 10%,
-          #eceff0 10%,
-          #384aeb 10%,
-          #384aeb 10%,
-          #eceff0 10%,
-          #eceff0 10%,
-          #eceff0 10%,
-          #eceff0 10%);
+      background-image: linear-gradient(
+        to right,
+        #384aeb 10%,
+        #384aeb 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+        #384aeb 10%,
+        #384aeb 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+        #eceff0 10%,
+        #eceff0 10%
+      );
 
       .container {
         display: flex;
@@ -128,11 +126,9 @@ main {
         }
       }
     }
-
   }
 
   // mainHeroSection end
-
 
   // mainCarusel
   #mainCarusel {
@@ -143,18 +139,17 @@ main {
       // // align-items: center;
       // // justify-content: space-between;
 
-     // gap: 10px;
+      // gap: 10px;
 
       .card {
         margin: 0 10px;
         position: relative;
 
         .hoverProductName {
-
           position: absolute;
 
           bottom: 0;
-          background-color: #FFFFFFCC;
+          background-color: #ffffffcc;
           //background-color: red;
           height: 0;
           width: 100%;
@@ -164,10 +159,10 @@ main {
           div {
             padding: 10px 0;
             margin-top: 50%;
-            color: #FFFFFF;
+            color: #ffffff;
 
             width: 60%;
-            background-color: #384AEB;
+            background-color: #384aeb;
 
             p {
               font-size: 20px;
@@ -180,12 +175,8 @@ main {
               margin-left: 20px;
               font-size: 13px;
             }
-
           }
-
-
         }
-
       }
 
       .card:hover {
@@ -194,34 +185,22 @@ main {
           width: 100%;
         }
       }
-
-
     }
-
   }
 
-  @media screen and (max-width:855px) {
+  @media screen and (max-width: 855px) {
     #mainCarusel {
-
       .mainCaruselContainer {
-
         #three {
           display: none;
         }
-
-
-
-
       }
-
     }
   }
 
-  @media screen and (max-width:542px) {
+  @media screen and (max-width: 542px) {
     #mainCarusel {
-
       .mainCaruselContainer {
-
         #three {
           display: none;
         }
@@ -229,21 +208,15 @@ main {
         #two {
           display: none;
         }
-
-
-
-
       }
-
     }
   }
 
   // mainCarusel end
 
-
   // trendingProduct
   #trendingProduct {
-    background-color: #FDFDFD;
+    background-color: #fdfdfd;
     padding: 10px 0;
 
     .container {
@@ -254,16 +227,16 @@ main {
         h2 {
           font-size: 36px;
           font-weight: 600;
-          font-family: "Oswald", 'sanf-serif';
+          font-family: "Oswald", "sanf-serif";
         }
 
         p {
           font-size: 14px;
-          color: #7B7B7B;
+          color: #7b7b7b;
         }
 
         hr {
-          border: 1px solid #384AEB;
+          border: 1px solid #384aeb;
           width: 80px;
           height: 1px;
           float: right;
@@ -280,11 +253,10 @@ main {
             position: relative;
 
             .hoverProductBasket {
-
               position: absolute;
 
               bottom: 0;
-              background-color: #FFFFFFCC;
+              background-color: #ffffffcc;
               //background-color: red;
               height: 0;
               width: 100%;
@@ -295,52 +267,66 @@ main {
               justify-content: center;
 
               .productBasketBox {
-
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #FFFFFF;
+                color: #ffffff;
                 gap: 10px;
+                div {
+                  background-color: #8894ff;
+                  // background-color: #ff0000cc;
+                  i {
+                    padding: 10px;
+                    color: #ffffff;
+                  }
+                }
+                div:hover {
+                  // background-color: #ff0000
 
-                i {
-
-                  padding: 10px;
-                  background-color: #8894FF;
-
+                  background-color: #384aeb;
                 }
 
-                i:hover {
+                .addWish {
+                  // background-color: #8894FF;
+                  background-color: #ff0000cc;
+                }
+                .addWish:hover {
+                  background-color: #ff0000;
 
-                  background-color: #384AEB;
+                  // background-color: #384AEB;
                 }
 
+                .removeWish {
+                  background-color: #8894ff;
+                  // background-color: #ff0000cc;
+                  i {
+                    padding: 10px;
+                    color: #ffffff;
+                  }
+                }
+                .removeWish:hover {
+                  // background-color: #ff0000
 
-
-
-
+                  background-color: #384aeb;
+                }
               }
-
-
             }
           }
           .productNameDiv {
             padding: 10px 0;
             text-align: center;
-            color: #7B7B7B;
+            color: #7b7b7b;
 
             h4 {
               margin: 10px 0;
               color: #000000;
-              a{
-               
+              a {
                 font-family: "Oswald", "sans-serif";
                 font-size: 20px;
-                
               }
-              
             }
             h4:hover {
-              color: #384AEB;
+              color: #384aeb;
             }
 
             span {
@@ -360,11 +346,9 @@ main {
         }
       }
     }
-
-
   }
 
-  @media screen and (max-width:855px) {
+  @media screen and (max-width: 855px) {
     #trendingProduct {
       padding: 10px 0;
       .container {
@@ -372,21 +356,17 @@ main {
           grid-template-columns: auto auto;
           .cardTrend {
             .productImgDiv {
-              img{
+              img {
                 width: 100%;
                 aspect-ratio: 1/1;
               }
-           
+            }
           }
-  
         }
       }
-  
-  
     }
   }
-  }
-  @media screen and (max-width:542px) {
+  @media screen and (max-width: 542px) {
     #trendingProduct {
       padding: 10px 10px;
       .container {
@@ -394,27 +374,22 @@ main {
           grid-template-columns: auto;
           .cardTrend {
             .productImgDiv {
-              img{
+              img {
                 width: 100%;
                 aspect-ratio: 1/1;
               }
-           
+            }
           }
-  
         }
       }
-  
-  
     }
-  }
   }
 
   // trendingProduct end
 
-
   // bestSellers
   #bestSellers {
-    background-color: #FDFDFD;
+    background-color: #fdfdfd;
     padding: 10px 0;
 
     .container {
@@ -425,16 +400,16 @@ main {
         h2 {
           font-size: 36px;
           font-weight: 600;
-          font-family: "Oswald", 'sanf-serif';
+          font-family: "Oswald", "sanf-serif";
         }
 
         p {
           font-size: 14px;
-          color: #7B7B7B;
+          color: #7b7b7b;
         }
 
         hr {
-          border: 1px solid #384AEB;
+          border: 1px solid #384aeb;
           width: 80px;
           height: 1px;
           float: right;
@@ -443,25 +418,21 @@ main {
 
       .bestSellersContainer {
         display: grid;
-   
-       
 
         .cardTrend {
           margin: 0 10px;
           .productImgDiv {
-            img{
+            img {
               width: 100%;
               aspect-ratio: 1/1;
-             
             }
             position: relative;
 
             .hoverProductBasket {
-
               position: absolute;
 
               bottom: 0;
-              background-color: #FFFFFFCC;
+              background-color: #ffffffcc;
               //background-color: red;
               height: 0;
               width: 100%;
@@ -472,52 +443,38 @@ main {
               justify-content: center;
 
               .productBasketBox {
-
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #FFFFFF;
+                color: #ffffff;
                 gap: 10px;
 
                 i {
-
                   padding: 10px;
-                  background-color: #8894FF;
-
+                  background-color: #8894ff;
                 }
 
                 i:hover {
-
-                  background-color: #384AEB;
+                  background-color: #384aeb;
                 }
-
-
-
-
-
               }
-
-
             }
           }
           .productNameDiv {
             padding: 10px 0;
             text-align: center;
-            color: #7B7B7B;
+            color: #7b7b7b;
 
             h4 {
               margin: 10px 0;
               color: #000000;
-              a{
-               
+              a {
                 font-family: "Oswald", "sans-serif";
                 font-size: 20px;
-                
               }
-              
             }
             h4:hover {
-              color: #384AEB;
+              color: #384aeb;
             }
 
             span {
@@ -537,8 +494,6 @@ main {
         }
       }
     }
-
-
   }
 
   // bestSellers end
@@ -546,7 +501,6 @@ main {
   // percentSection start
   #percentSection {
     padding: 100px 0;
-
 
     background-image: url("../imgs/parallax-bg.png.webp");
     background-size: cover;
@@ -585,7 +539,4 @@ main {
   }
 
   // percentSection end
-
-
-
 }

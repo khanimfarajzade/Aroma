@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
+    <title>Shopping cart</title>
+    <style>
+      .card__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1%;
+      }
+      .card {
+        width: 12.5%;
+        height: 200px;
+        border: 1px solid black;
+      }
+      .total {
+        color: red;
+        position: fixed;
+        border: 2px solid black;
+        top: 0;
+        right: 0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="detskopMenu">
+          <img src="../imgs/logo.png.webp" alt="logo" />
+  
+          <ul>
+            <li><a href="../../index.html" target="_blank">Home</a> </li>
+            <!-- <select name="shop" id="shop">
+              <option value="shop" disabled selected>Shop</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select> -->
+            <li><a href="./prdcategory.html" target="_blank">Products</a> </li>
+            <!-- <select name="pages" id="pages">
+              <option value="pages" disabled selected>Pages</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select> -->
+            <li><a href="./login.html" target="_blank">Login</a></li>
+          </ul>
+          <div class="buttonMenu">
+            <div class="iconBox">
+              <i class="fa fa-solid fa-search"></i>
+              <a href="./wishlist.html" target="_blank"><i class="fa-regular fa-heart"></i><sup>3</sup></a>
+              <a href="./basket.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></a>
+            </div>
+            <button type="button" class="btn navBtn"><a href="./register.html" target="_blank">Sign Up</a> </button>
+          </div>
+        </div>
+  
+        <div class="mobilMenu">
+          <div class="navBrandContainer">
+            <img src="../imgs/logo.png.webp" alt="logo" />
+            <i class="fa-solid fa-bars burgerBtn"></i>
+          </div>
+          <div class="mobilList">
+            <ul>
+              <li><a href="../../index.html" target="_blank">Home</a> </li>
+              <!-- <select name="shop" id="shop">
+                <option value="shop" disabled selected>Shop</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select> -->
+              <li><a href="./prdcategory.html" target="_blank">Products</a> </li>
+              <!-- <select name="pages" id="pages">
+                <option value="pages" disabled selected>Pages</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select> -->
+              <li><a href="./login.html" target="_blank">Login</a></li>
+            </ul>
+            <div class="buttonMenu">
+              <div class="iconBox">
+                <i class="fa fa-solid fa-search"></i>
+                <a href="./wishlist.html" target="_blank"><i class="fa-regular fa-heart"></i><sup>3</sup></a>
+                <a href="./basket.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i><sup>3</sup></a>
+              </div>
+              <button type="button" class="btn navBtn"><a href="./register.html" target="_blank">Sign Up</a> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <main>
+      <div class="card__box"></div>
+    </main>
+    
+
+    
+    <script src="../js/nav.js"></script>
+    <script src="../js/shopcart.js"></script>
+  </body>
+</html>

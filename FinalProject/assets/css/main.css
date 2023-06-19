@@ -178,7 +178,7 @@ main {
   padding-top: 80px;
 }
 main #mainHeroSection {
-  background-image: linear-gradient(to right, #384aeb 35%, #384aeb 25%, #F1F6F7 25%, #F1F6F7 25%);
+  background-image: linear-gradient(to right, #384aeb 35%, #384aeb 25%, #f1f6f7 25%, #f1f6f7 25%);
 }
 main #mainHeroSection .container {
   display: flex;
@@ -273,9 +273,9 @@ main #mainCarusel .mainCaruselContainer .card .hoverProductName {
 main #mainCarusel .mainCaruselContainer .card .hoverProductName div {
   padding: 10px 0;
   margin-top: 50%;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 60%;
-  background-color: #384AEB;
+  background-color: #384aeb;
 }
 main #mainCarusel .mainCaruselContainer .card .hoverProductName div p {
   font-size: 20px;
@@ -305,7 +305,7 @@ main #mainCarusel .mainCaruselContainer .card:hover .hoverProductName {
   }
 }
 main #trendingProduct {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   padding: 10px 0;
 }
 main #trendingProduct .container .trendingProductHeading {
@@ -319,10 +319,10 @@ main #trendingProduct .container .trendingProductHeading h2 {
 }
 main #trendingProduct .container .trendingProductHeading p {
   font-size: 14px;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 main #trendingProduct .container .trendingProductHeading hr {
-  border: 1px solid #384AEB;
+  border: 1px solid #384aeb;
   width: 80px;
   height: 1px;
   float: right;
@@ -351,20 +351,39 @@ main #trendingProduct .container .trendingProductContainer .cardTrend .productIm
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 10px;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i {
-  padding: 10px;
-  background-color: #8894FF;
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox div {
+  background-color: #8894ff;
 }
-main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i:hover {
-  background-color: #384AEB;
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox div i {
+  padding: 10px;
+  color: #ffffff;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox div:hover {
+  background-color: #384aeb;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox .addWish {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox .addWish:hover {
+  background-color: #ff0000;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox .removeWish {
+  background-color: #8894ff;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox .removeWish i {
+  padding: 10px;
+  color: #ffffff;
+}
+main #trendingProduct .container .trendingProductContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox .removeWish:hover {
+  background-color: #384aeb;
 }
 main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv {
   padding: 10px 0;
   text-align: center;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv h4 {
   margin: 10px 0;
@@ -375,7 +394,7 @@ main #trendingProduct .container .trendingProductContainer .cardTrend .productNa
   font-size: 20px;
 }
 main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv h4:hover {
-  color: #384AEB;
+  color: #384aeb;
 }
 main #trendingProduct .container .trendingProductContainer .cardTrend .productNameDiv span {
   font-family: "Roboto";
@@ -412,7 +431,7 @@ main #trendingProduct .container .trendingProductContainer .cardTrend:hover .hov
   }
 }
 main #bestSellers {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   padding: 10px 0;
 }
 main #bestSellers .container .bestSellersHeading {
@@ -426,10 +445,10 @@ main #bestSellers .container .bestSellersHeading h2 {
 }
 main #bestSellers .container .bestSellersHeading p {
   font-size: 14px;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 main #bestSellers .container .bestSellersHeading hr {
-  border: 1px solid #384AEB;
+  border: 1px solid #384aeb;
   width: 80px;
   height: 1px;
   float: right;
@@ -463,20 +482,20 @@ main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .ho
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 10px;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i {
   padding: 10px;
-  background-color: #8894FF;
+  background-color: #8894ff;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productImgDiv .hoverProductBasket .productBasketBox i:hover {
-  background-color: #384AEB;
+  background-color: #384aeb;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv {
   padding: 10px 0;
   text-align: center;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv h4 {
   margin: 10px 0;
@@ -487,7 +506,7 @@ main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv h4
   font-size: 20px;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv h4:hover {
-  color: #384AEB;
+  color: #384aeb;
 }
 main #bestSellers .container .bestSellersContainer .cardTrend .productNameDiv span {
   font-family: "Roboto";
