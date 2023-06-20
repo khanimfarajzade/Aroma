@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"> -->
     
-    <title>Admin panel</title>
+    <title>Add Product</title>
 </head>
 <body>
   <header>
@@ -84,8 +84,8 @@
     <nav class="navLeft">
       <h2>Admin</h2>
       <ul>
-        <li><a href="./admin.html" target="_blank">Table of Prducts</a></li>
-        <li><a href="./addprdct.html" target="_blank">Add Product</a></li>
+        <li><a href="../pages/admin.html" target="_blank">Table of Prducts</a></li>
+        <li><a href="../pages/addprdct.html" target="_blank">Add Product</a></li>
         <li><a href="" target="_blank"></a></li>
       </ul>
     </nav>
@@ -94,33 +94,25 @@
     
       <main>
         <div class="container">
-          
-          <div class="cardContainer">
-            <table class="productTable">
-                <thead>
-                  <tr >
-                    <th>№</th>
-                    <th>Product</th>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Delete</th>
-                    <th>Uptade</th>
-                  </tr>
-                </thead>
-                <tbody class="tbody">
-                  <!-- <tr>
-                    <td>January</td>
-                    <td>$100</td>
-                  </tr>
-                  <tr>
-                    <td>February</td>
-                    <td>$80</td>
-                  </tr> -->
-                </tbody>
-               
-              </table>
-        </div>
+          <div class="formContainer">
+            <form action="#" class="myForm">
+              <input type="url" placeholder="Product img url" id="url">
+              <!-- <input type="text" placeholder="PROCUDCT"> -->
+              <input type="text" placeholder="Product name" id="prdName" >
+              <input type="number" placeholder="Product price" id="price">
+              <label for="category">Choose a Category:</label>
+
+              <select name="category"  id="category">
+                <option value="Accessories">Accessories</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Decor">Decor</option>
+                <option value="Kids">Kisd</option>
+              </select>
+              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Description" id="description"></textarea>
+             <button type="submit">Add Product</button>
+            </form>
+          </div>
+         
         </div>
         
       </main>
@@ -128,6 +120,7 @@
 
       <!-- js link -->
       <script src="../js/nav.js"></script>
-      <script src="../js/admin.js"></script>
+      <!-- <script src="../js/admin.js"></script> -->
+      <script src="../js/addprd.js"></script>
 </body>
 </html>

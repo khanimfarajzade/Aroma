@@ -1368,3 +1368,11 @@ footer {
 thead th {
   font-weight: bold;
 }
+
+.formContainer form {
+  padding: 0 30%;
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
