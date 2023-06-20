@@ -2,7 +2,7 @@ const url = document.querySelector("#url");
 const prdName = document.querySelector("#prdName");
 const price = document.querySelector("#price");
 const category = document.querySelector("#category");
-const desc = document.querySelector("#desc");
+const description = document.querySelector("#description");
 const myForm = document.querySelector(".myForm");
 
 myForm.addEventListener("submit" ,function (e) {
@@ -17,7 +17,7 @@ myForm.addEventListener("submit" ,function (e) {
     price: price.value,
     category: category.value,
     src: url.value,
-    description: desc.value
+    description: description.value
   }),
   
   headers: {

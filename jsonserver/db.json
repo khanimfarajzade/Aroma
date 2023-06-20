@@ -76,10 +76,25 @@
     {
       "id": 8,
       "name": "Pocket Flask Whisky Bottle",
-      "price": 150,
+      "price": 400,
       "category": "Accessories",
       "src": "https://preview.colorlib.com/theme/aroma/img/product/product4.png.webp",
       "description": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter."
+    },
+    {
+      "id": 9,
+      "name": "AC Adapter",
+      "price": 400,
+      "category": "Accessories",
+      "src": "https://preview.colorlib.com/theme/aroma/img/product/product4.png.webp",
+      "description": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter."
+    },
+    {
+      "name": "Danielle Cote",
+      "price": "775",
+      "category": "Beauty",
+      "src": "https://www.wosediwyw.us",
+      "id": 10
     }
   ]
 }

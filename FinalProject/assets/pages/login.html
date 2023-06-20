@@ -97,18 +97,18 @@
                 </div>
                 <div class="createAccount">
                    
-                    <form action="#">
+                    <form action="#" class="formMy">
                         <h2>LOG IN TO ENTER</h2>
-                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Username" id="user">
                       
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="pass">
                        
                         <div>
                             <input type="checkbox" name="keepPas" id="keepPas">
                           <label for="keepPas">Keep me logged in</label>
                         </div>
-                        <button type="submit" style="background-color: #384aeb;border-radius: 20px;">Log In</button>
-                       <a href="#">Forgot Password?</a>
+                        <button type="submit" style="background-color: #384aeb;border-radius: 20px;" id="loginButton">Log In</button>
+                       <!-- <a href="./admin.html" target="_blank" style="display: none;" class="adminLOG">Go to Admin <i class="fa-solid fa-right-long"></i></a> -->
                     </form>
                 </div>
              </div>
@@ -247,5 +247,6 @@
         });
     </script>
 
-    <script src="../js/product.js"></script>
+  
+    <script src="../js/login.js"></script>
 </body>
