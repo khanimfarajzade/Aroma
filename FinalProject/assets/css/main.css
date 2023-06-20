@@ -1357,11 +1357,12 @@ footer {
 }
 
 .deleteBtn {
-  color: aliceblue;
-  background-color: #c91a1a;
-  border-radius: 5px;
-  border-color: #c91a1a;
-  padding: 3px;
+  color: brown;
+  background-color: transparent;
+  border: none;
+}
+.deleteBtn i {
+  font-size: 24px;
 }
 
 thead th {

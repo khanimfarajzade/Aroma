@@ -223,13 +223,17 @@
   }
   
   .deleteBtn{
-    //margin-top: 2px;
-    color: aliceblue;
-    background-color: #c91a1a;
-    border-radius: 5px;
-   // border: none;
-    border-color: #c91a1a;
-    padding: 3px;
+  
+    color: brown;
+    background-color: transparent;
+   
+    border: none;
+    i{
+        font-size: 24px;
+      
+    }
+  
+   
   }
 
  thead {

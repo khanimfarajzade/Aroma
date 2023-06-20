@@ -21,11 +21,21 @@ fetch("http://localhost:3000/products")
         const editTd = document.createElement("td");
         const delet = document.createElement("button");
         const edit = document.createElement("button");
-        edit.classList.add("editBtn");
-        delet.classList.add("deleteBtn");
+       
+
+
+console.log(data[i].id);
+
         delet.onclick = function () {
-          productTr.remove()
+            fetch("http://localhost:3000/products/" + data[i].id, {
+          method: "DELETE",
+        })
+          .then((res) => res.text()) // or res.json()
+          .then((res) => console.log(res));
+         // productTr.remove()
         };
+
+
         edit.addEventListener("click", function () {
           const editInput = document.createElement("input");
           editTd.appendChild(editInput);
@@ -51,19 +61,18 @@ fetch("http://localhost:3000/products")
         category.innerText = `${data[i].category}`;
         price.innerText = `${data[i].price}$`;
         img.src = data[i].src
-        delet.innerText = "Delete";
+        delet.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
         edit.innerText = "Edit";
+
+        //add class
+        edit.classList.add("editBtn");
+        delet.classList.add("deleteBtn");
 
 
         //append hissesi   
         tbody.appendChild(productTr);
         productTable.appendChild(tbody);
         productTr.append(productNum,imgtd,productName,category,price)
-        // productTr.appendChild(productNum);
-        // productTr.appendChild(productName);
-        // productTr.appendChild(category);
-        // productTr.appendChild(price);
-        // productTr.appendChild(imgtd);
         imgtd.appendChild(img);
         productTr.appendChild(deletTd);
         deletTd.appendChild(delet);
