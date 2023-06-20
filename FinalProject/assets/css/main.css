@@ -1171,3 +1171,199 @@ footer {
   font-size: 24px;
   font-weight: bold;
 }
+
+.adminNav {
+  position: fixed;
+  width: 75%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  display: flex;
+  align-items: center;
+  left: 25%;
+  height: 80px;
+  background-color: #ffffff;
+}
+.adminNav .container .detskopMenu {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adminNav .container .detskopMenu ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.adminNav .container .detskopMenu ul li {
+  transition: 350ms;
+}
+.adminNav .container .detskopMenu ul li a {
+  font-weight: bold;
+}
+.adminNav .container .detskopMenu ul li:hover {
+  color: #384aeb;
+}
+.adminNav .container .detskopMenu ul select {
+  border: none;
+  font-size: 16px;
+}
+.adminNav .container .detskopMenu .buttonMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.adminNav .container .detskopMenu .buttonMenu .navBtn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #eeeeee;
+}
+.adminNav .container .detskopMenu .buttonMenu .navBtn a {
+  font-weight: bold;
+}
+.adminNav .container .detskopMenu .buttonMenu .navBtn:hover {
+  background-color: transparent;
+  transition: 600ms;
+  border: 1px solid #3e4fea;
+  color: #000000;
+  font-weight: bold;
+}
+.adminNav .container .mobilMenu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .adminNav .container .detskopMenu {
+    display: none;
+  }
+  .adminNav .container .mobilMenu {
+    height: 20px;
+    display: block;
+  }
+  .adminNav .container .mobilMenu .navBrandContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .adminNav .container .mobilMenu .navBrandContainer i {
+    font-size: 24px;
+    color: #3e4fea;
+  }
+  .adminNav .container .mobilMenu .mobilList {
+    height: 0px;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  .adminNav .container .mobilMenu .mobilList ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .adminNav .container .mobilMenu .mobilList ul li {
+    transition: 350ms;
+  }
+  .adminNav .container .mobilMenu .mobilList ul li a {
+    font-weight: bold;
+  }
+  .adminNav .container .mobilMenu .mobilList ul li:hover {
+    color: #384aeb;
+  }
+  .adminNav .container .mobilMenu .mobilList ul select {
+    border: none;
+    font-size: 16px;
+  }
+  .adminNav .container .mobilMenu .mobilList .buttonMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .adminNav .container .mobilMenu .mobilList .buttonMenu .navBtn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #eeeeee;
+    transition: 600ms;
+  }
+  .adminNav .container .mobilMenu .mobilList .buttonMenu .navBtn a {
+    font-weight: bold;
+  }
+  .adminNav .container .mobilMenu .mobilList .buttonMenu .navBtn:hover {
+    background-color: transparent;
+    border: 1px solid #3e4fea;
+    color: #000000;
+    font-weight: bold;
+  }
+  .adminNav .container .mobilMenu .list {
+    height: 150px;
+    background-color: #ffffff;
+  }
+}
+.navLeft {
+  padding: 40px 10px;
+  color: #ffffff;
+  font-weight: 600;
+  width: 25%;
+  background: #536976; /* fallback for old browsers */
+  background: #4b6cb7; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.navLeft ul {
+  color: #ffffff;
+}
+.navLeft ul li {
+  margin: 20px 0;
+}
+.navLeft h2 {
+  font-family: "Oswald", "sans-serif";
+  font-size: 24px;
+}
+
+.cardContainer {
+  padding: 0 30%;
+}
+
+.cardContainer {
+  margin: 0 auto;
+  width: 100%;
+}
+.cardContainer table, .cardContainer th, .cardContainer td {
+  padding: 10px;
+  border: 2px solid #384aeb;
+  border-collapse: collapse;
+}
+
+.bg {
+  background-color: yellow;
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+}
+
+.btnClick {
+  margin-top: 2px;
+  color: aliceblue;
+  background-color: goldenrod;
+  border-radius: 3px;
+  border-color: rgb(197, 197, 16);
+  padding: 3px;
+}
+
+.editBtn {
+  color: aliceblue;
+  background-color: #4b9b37;
+  border-radius: 5px;
+  border-color: #4b9b37;
+  padding: 3px;
+}
+
+.deleteBtn {
+  color: aliceblue;
+  background-color: #c91a1a;
+  border-radius: 5px;
+  border-color: #c91a1a;
+  padding: 3px;
+}
+
+thead th {
+  font-weight: bold;
+}

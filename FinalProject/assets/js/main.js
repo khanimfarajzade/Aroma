@@ -72,6 +72,11 @@ function createCard(data) {
   if (wishlist_arr.find((x) => x.id == data.id) !== undefined) {
     wishlist_btn.classList.add("addWish");
   }
+
+  //yoxla basketde varsa
+  if (basket_arr.find((x) => x.id == data.id) !== undefined) {
+    basket_btn.classList.add("addWish");
+  }
   // basket
   basket_btn.addEventListener("click", function () {
     //eger bu idli elemnent yoxdursa push et
@@ -82,6 +87,7 @@ function createCard(data) {
     localStorage.setItem("basket", JSON.stringify(basket_arr));
   });
 
+
   // wishlist
   wishlist_btn.addEventListener("click", function () {
     console.log(wishlist_arr.find((x) => x.id == data.id));
@@ -89,12 +95,12 @@ function createCard(data) {
 
       wishlist_arr.push(data);
       wishlist_btn.classList.add("addWish");
-      console.log("silindi");
+      console.log("elave olundu");
     } else {
       wishlist_arr = wishlist_arr.filter((x) => x.id !== data.id);
       wishlist_btn.classList.remove("addWish");
     
-      console.log("elave olundu");
+      console.log("silindi");
     }
     localStorage.setItem("wishlist", JSON.stringify(wishlist_arr));
   });
