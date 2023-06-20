@@ -62,12 +62,15 @@ console.log(data[i].id);
         price.innerText = `${data[i].price}$`;
         img.src = data[i].src
         delet.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
-        edit.innerHTML = `<a href="../pages/editprd.html" target="_blank">Edit</a>`;
+        edit.innerHTML = `<a href="../pages/editprd.html#${data[i].id}" target="_blank">Edit</a>`;
 
         //add class
         edit.classList.add("editBtn");
         delet.classList.add("deleteBtn");
-
+        edit.addEventListener("click", function () {
+          window.location.hash;
+          console.log( window.location.hash);
+         });
 
         //append hissesi   
         tbody.appendChild(productTr);

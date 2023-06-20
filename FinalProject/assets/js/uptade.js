@@ -1,35 +1,47 @@
 const url = document.querySelector("#url");
-const prdName = document.querySelector("#prdName");
+const prd__Name = document.querySelector("#prd__Name");
 const price = document.querySelector("#price");
 const category = document.querySelector("#category");
 const description = document.querySelector("#description");
 const myForm = document.querySelector(".myForm");
 
-myForm.addEventListener("submit" ,function (e) {
-   
-    e.preventDefault();
-   fetch("http://localhost:3000/products" ,{
-    
-    method: "POST",
-  body: JSON.stringify({
-   
-    name: prdName.value,
-    price: price.value,
-    category: category.value,
-    src: url.value,
-    description: description.value
-  }),
-  
-  headers: {
-    "Content-type": "application/json; charset=UTF-8"
-  }
-   })
-   .then(res =>res.json())
-   .then(
-    data =>{
-        console.log(data);
-    }
-   )
-  
+fetch(`http://localhost:3000/products/`+window.location.hash.slice(1))
+.then(res => res.json())
+.then(data => {
+  url.value = data.src;
+  prd__Name.value = data.name;
+  price.value = data.price;
+  category.value = data.category;
+  description.value = data.description;
 })
+
+
+console.log(`http://localhost:3000/products/`+window.location.hash.slice(1));
+myForm.addEventListener("submit" ,async (e) => {
+ 
+    e.preventDefault();
+  let obj = {}; 
+ 
+  await fetch(`http://localhost:3000/products/`+window.location.hash.slice(1))
+        .then((res) => res.json())
+        .then((data) => {
+          obj = data;
+          obj.name = prd__Name.value;
+          obj.price = price.value;
+          obj.category = category.value;
+          obj.src = url.value;
+          obj.description = description.value;
+        });
+        await fetch(`http://localhost:3000/products/`+window.location.hash.slice(1), {
+          method: "PUT",
+          body: JSON.stringify(obj),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        });
+
+  
+});
+
+
 

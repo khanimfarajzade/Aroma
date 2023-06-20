@@ -566,9 +566,19 @@ main #percentSection p {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   color: aliceblue;
+  flex-direction: column;
+  gap: 20px;
   background: #000428; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+footer i {
+  margin: 0 10px;
+  font-size: 24px;
 }
 
 #singleProduct .pageNotification {
@@ -1320,7 +1330,7 @@ footer {
 }
 
 .cardContainer {
-  padding: 0 30%;
+  padding-left: 30%;
 }
 
 .cardContainer {
@@ -1370,9 +1380,26 @@ thead th {
 }
 
 .formContainer form {
-  padding: 0 30%;
+  padding-left: 25%;
   width: auto;
-  margin: auto;
   display: flex;
   flex-direction: column;
+}
+.formContainer form input, .formContainer form select {
+  height: 40px;
+  margin: 10px 0;
+  border: 2px solid #eeeeee;
+  padding: 5px;
+}
+.formContainer form textarea {
+  padding: 5px;
+  border: 2px solid #eeeeee;
+}
+.formContainer form button {
+  color: #ffffff;
+  height: 40px;
+  background-color: #384aeb;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
 }

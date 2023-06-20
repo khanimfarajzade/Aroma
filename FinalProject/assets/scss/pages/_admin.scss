@@ -178,7 +178,7 @@
 }
 
 .cardContainer{
-    padding: 0 30%;
+    padding-left:  30%;
 }
 
 .cardContainer{
@@ -246,11 +246,30 @@
 
  .formContainer{
     form{
-        padding: 0 30%;
+        padding-left:  25%;
         width: auto;
-        margin: auto;
+      
         display: flex;
         flex-direction: column;
+
+        input, select{
+          height: 40px;
+          margin: 10px 0;
+          border: 2px solid #eeeeee;
+          padding: 5px;
+        }
+        textarea{
+          padding: 5px;
+          border: 2px solid #eeeeee;
+        }
+        button{
+       color: #ffffff;
+          height: 40px;
+          background-color: #384aeb;
+          margin: 10px 0;
+          border: none;
+          border-radius: 20px;
+        }
     }
  }
 
