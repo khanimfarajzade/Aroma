@@ -1,51 +1,58 @@
-const signup_submit = document.querySelector(".signup-submit");
-const login_btn = document.querySelector(".login-btn");
-
+const registerForm = document.querySelector(".registerForm");
 const user = document.getElementById("user");
 const email = document.getElementById("email");
 const pass = document.getElementById("pass");
-const confPass = document.getElementById("confPass");
-let arr = [];
+const confirmPass = document.getElementById("confirmPass");
+let array = [];
+
 
 if (JSON.parse(localStorage.getItem("Data")) !== null) {
-  arr = JSON.parse(localStorage.getItem("Data"));
+  array = JSON.parse(localStorage.getItem("Data"));
 }
 
-signup_submit.addEventListener("submit", (e) => {
+registerForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const obj = {
     name: user.value,
     email: email.value,
     pass: pass.value,
-    confPass: confPass.value,
+    confirmPass: confirmPass.value,
   };
 
-  arr.push(obj);
-
-  let result1 = false;
-  console.log(arr);
+  array.push(obj);
+  let register_result = false;
+  console.log(array);
   if (JSON.parse(localStorage.getItem("Data")) !== null) {
     for (let i = 0; i < JSON.parse(localStorage.getItem("Data")).length; i++) {
       console.log(JSON.parse(localStorage.getItem("Data"))[i].name);
       if (JSON.parse(localStorage.getItem("Data"))[i].name === user.value) {
-        result1 = true;
+        register_result = true;
       } else {
-        result1 = false;
+        register_result = false;
       }
     }
 
-    if (pass.value !== confPass.value) {
-      alert("Passwords is not the same");
-    } else if (result1) {
+
+
+
+
+    if (pass.value !== confirmPass.value) {
+      alert("Password or login is not true");
+    } else if (register_result) {
       alert("user already exists");
     } else {
-      localStorage.setItem("Data", JSON.stringify(arr));
-      window.location.href = "login.html";
+      localStorage.setItem("Data", JSON.stringify(array));
+     // window.location.href = "login.html";
+     window.open('login.html');
     }
   } else {
-    localStorage.setItem("Data", JSON.stringify(arr));
+    localStorage.setItem("Data", JSON.stringify(array));
   }
 });
 
+
+
 // localStorage.clear()
+
+
