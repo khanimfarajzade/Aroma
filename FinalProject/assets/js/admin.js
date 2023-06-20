@@ -62,7 +62,7 @@ console.log(data[i].id);
         price.innerText = `${data[i].price}$`;
         img.src = data[i].src
         delet.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
-        edit.innerHTML = `<a href="../pages/editprd.html#${data[i].id}" target="_blank">Edit</a>`;
+        edit.innerHTML = `<a href="../pages/editprd.html#${data[i].id}" target="_blank">Edit <i class="fa-solid fa-pen-to-square"></i></a>`;
 
         //add class
         edit.classList.add("editBtn");

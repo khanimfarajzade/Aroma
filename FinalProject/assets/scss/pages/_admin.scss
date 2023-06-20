@@ -148,6 +148,7 @@
 }
 
 
+
 .navLeft{
     padding: 40px 10px;
     color: #ffffff;
@@ -176,14 +177,17 @@
        
     }
 }
+//navbar end
+
+
+
+//table start
+
 
 .cardContainer{
-    padding-left:  30%;
-}
-
-.cardContainer{
-    margin: 0 auto;
-    width: 100%;
+  width: 75%;  
+  margin: 0 25%;
+    
     table ,th,td{
   padding: 10px;
       border: 2px solid #384aeb;
@@ -195,46 +199,10 @@
     }
     
   }
+
+ 
   
-  .bg{
-    background-color: yellow;
-    border:2px solid goldenrod;
-    border-radius: 8px;
-  }
-  
-  .btnClick{
-    margin-top: 2px;
-    color: aliceblue;
-    background-color: goldenrod;
-    border-radius: 3px;
-    //border: none;
-    border-color: rgb(197, 197, 16);
-    padding: 3px;
-  }
-  
-  .editBtn{
-    //margin-top: 2px;
-    color: aliceblue;
-    background-color: #4b9b37;
-    border-radius: 5px;
-   // border: none;
-    border-color: #4b9b37;
-    padding: 3px;
-  }
-  
-  .deleteBtn{
-  
-    color: brown;
-    background-color: transparent;
-   
-    border: none;
-    i{
-        font-size: 24px;
-      
-    }
-  
-   
-  }
+ 
 
  thead {
     th{
@@ -242,7 +210,9 @@
     }
  }
 
+//table end
 
+//form start
 
  .formContainer{
     form{
@@ -273,3 +243,46 @@
     }
  }
 
+ //form end
+
+
+ //buttonlar
+ .bg{
+  background-color: yellow;
+  border:2px solid goldenrod;
+  border-radius: 8px;
+}
+
+.btnClick{
+  margin-top: 2px;
+  color: aliceblue;
+  background-color: goldenrod;
+  border-radius: 3px;
+  //border: none;
+  border-color: rgb(197, 197, 16);
+  padding: 3px;
+}
+
+.editBtn{
+  //margin-top: 2px;
+  color: aliceblue;
+  background-color: #4b9b37;
+  border-radius: 5px;
+ // border: none;
+  border-color: #4b9b37;
+  padding: 3px;
+}
+
+.deleteBtn{
+
+  color: brown;
+  background-color: transparent;
+ 
+  border: none;
+  i{
+      font-size: 24px;
+    
+  }
+
+ 
+}
