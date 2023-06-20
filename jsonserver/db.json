@@ -82,16 +82,8 @@
       "description": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter."
     },
     {
-      "id": 9,
-      "name": "AC Adapter",
-      "price": 400,
-      "category": "Accessories",
-      "src": "https://preview.colorlib.com/theme/aroma/img/product/product4.png.webp",
-      "description": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter."
-    },
-    {
       "name": "Ray Norman",
-      "price": "740",
+      "price": "745",
       "category": "Accessories",
       "src": "https://preview.colorlib.com/theme/aroma/img/home/hero-slide3.png.webp",
       "id": 10,
