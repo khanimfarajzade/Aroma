@@ -36,25 +36,25 @@ console.log(data[i].id);
         };
 
 
-        edit.addEventListener("click", function () {
-          const editInput = document.createElement("input");
-          editTd.appendChild(editInput);
-          const editInputBtn = document.createElement("button");
-          editTd.appendChild(editInputBtn);
-          editInput.classList.add("bg");
-          editInputBtn.classList.add("btnClick");
-          // editInput.innerText = "edit"
-          editInputBtn.innerText = "click";
-          editInputBtn.addEventListener("click", function () {
-            price.innerText = editInput.value;
-            editInput.style.display ="none";
-            editInputBtn.style.display ="none";
-            // cardHeading.classList.add("name");
+        // edit.addEventListener("click", function () {
+        //   const editInput = document.createElement("input");
+        //   editTd.appendChild(editInput);
+        //   const editInputBtn = document.createElement("button");
+        //   editTd.appendChild(editInputBtn);
+        //   editInput.classList.add("bg");
+        //   editInputBtn.classList.add("btnClick");
+        //   // editInput.innerText = "edit"
+        //   editInputBtn.innerText = "click";
+        //   editInputBtn.addEventListener("click", function () {
+        //     price.innerText = editInput.value;
+        //     editInput.style.display ="none";
+        //     editInputBtn.style.display ="none";
+        //     // cardHeading.classList.add("name");
 
-          })
+        //   })
 
 
-        })
+        // })
         //inner hissesi
         productNum.innerText = i + 1;
         productName.innerText = data[i].name;
@@ -62,7 +62,7 @@ console.log(data[i].id);
         price.innerText = `${data[i].price}$`;
         img.src = data[i].src
         delet.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
-        edit.innerText = "Edit";
+        edit.innerHTML = `<a href="../pages/editprd.html" target="_blank">Edit</a>`;
 
         //add class
         edit.classList.add("editBtn");
